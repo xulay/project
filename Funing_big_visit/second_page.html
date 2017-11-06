@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	    <title>阜宁县大走访活动</title>
+		<link rel="stylesheet" type="text/css" href="css/reset_app.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/sm.min.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/base.css"/>
+	</head>
+	<body>
+		<div class="page">
+			<div class="content">
+				<!--个人信息表单-->
+				<form class="x-fp-form" action="" method="post">
+					<ul>
+						<li>
+							<div class="x-fp-input-h2">
+								选择走访服务对象类型<span class="x-ico"><img src="img/required-ico.png" width="100%"/></span>
+							</div>
+							<div class="">
+								<div class="x-fp-input x-fp-input-1">
+									<input class="FL" id="typePicker"  type="text" name="" id="" value="" placeholder="请选择" readOnly="true"/>
+									<span class="FR x-ico"><img src="img/jt_b.png" width="100%"/></span>
+									<div class="clr"></div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</form>
+				<!--城乡群众-->
+				<form class="x-fp-form x-fp-form-2 x-fp-form-cxqz" action="" method="post">
+					<ul>
+						<li>
+							<div class="x-fp-input-h2">
+								请选择走访城乡群众所在镇区村（居）<span class="x-ico"><img src="img/required-ico.png" width="100%"/></span>
+							</div>
+							<div class="">
+								<div class="x-fp-input FL">
+									<input class="FL x-select-input" type="hidden"/>
+		
+									<select class="FL ftPicker" id=''>
+										<option value="请选择所在镇区" disabled selected >请选择所在镇区</option>
+										<option value="阜城街道办">阜城街道办</option>
+										<option value="吴滩街道办">吴滩街道办</option>
+										<option value="沟墩镇">沟墩镇</option>
+										<option value="陈良镇">陈良镇</option>
+										<option value="三灶镇">三灶镇</option>
+										<option value="新沟镇">新沟镇</option>
+										<option value="陈集镇">陈集镇</option>
+										<option value="羊寨镇">羊寨镇</option>
+										<option value="芦蒲镇">芦蒲镇</option>
+										<option value="板湖镇">板湖镇</option>
+										<option value="东沟镇">东沟镇</option>
+										<option value="益林镇">益林镇</option>
+										<option value="古河镇">古河镇</option>
+										<option value="罗桥镇">罗桥镇</option>
+										<option value="花园街道办开发区">花园街道办开发区</option>
+										<option value="花园街道办开发区">郭墅镇澳洋工业园</option>
+										<option value="金沙湖街道办">金沙湖街道办</option>
+										<option value="现代服务园">现代服务园</option>
+										<option value="公兴社区">公兴社区</option>
+										<option value="硕集社区">硕集社区</option>
+									</select>
+									<span class="FR x-ico"><img src="img/jt_b.png" width="100%"/></span>
+									<div class="clr"></div>
+								</div>
+								<div class="x-fp-input FR x-fp-input-dw">
+									<input class="FL x-select-input x-select-input-1" type="hidden"/>
+									<div class="x-select-no-2-p">
+										<select class="FL x-select-no-2" name="" disabled>
+											<option value="请选择所在村庄">请选择所在村庄</option>
+										</select>
+									</div>
+									<select class="FL x-input-unit-1">
+										<option value="缭黄">缭黄</option>
+										<option value="北周庄">北周庄</option>
+										<option value="新港">新港</option>
+										<option value="城东">城东</option>
+										<option value="方黄">方黄</option>
+										<option value="杜庄">杜庄</option>
+										<option value="中岗">中岗</option>
+										<option value="新桥">新桥</option>
+										<option value="城西">城西</option>
+										<option value="光明">光明</option>
+										<option value="桥北">桥北</option>
+										<option value="城北">城北</option>
+										<option value="向阳">向阳</option>
+										<option value="林海">林海</option>
+										<option value="东风">东风</option>
+										<option value="新盛">新盛</option>
+										<option value="中心">中心</option>
+										<option value="窑桥">窑桥</option>
+										<option value="条河">条河</option>
+										<option value="兴阜">兴阜</option>
+										<option value="城南">城南</option>
+										<option value="崔湾">崔湾</option>
+										<option value="南苑">南苑</option>
+										<option value="孙桥">孙桥</option>
+										<option value="红心">红心</option>
+										<option value="和平">和平</option>
+									</select>
+									<select class="FL x-input-unit-2">
+										<option value="许和">许和</option>
+										<option value="大王">大王</option>
+										<option value="两河">两河</option>
+										<option value="三岔">三岔</option>
+										<option value="射南">射南</option>
+										<option value="双港">双港</option>
+										<option value="兴东">兴东</option>
+										<option value="阜东">阜东</option>
+										<option value="北汛">北汛</option>
+										<option value="邹圩">邹圩</option>
+										<option value="老沙">老沙</option>
+										<option value="通阳">通阳</option>
+										<option value="邓舍">邓舍</option>
+										<option value="仁范">仁范</option>
+										<option value="陈戴">陈戴</option>
+										<option value="戴沟">戴沟</option>
+										<option value="吴滩">吴滩</option>
+										<option value="蔡河">蔡河</option>
+										<option value="立新">立新</option>
+										<option value="合利">合利</option>
+										<option value="合东">合东</option>
+									</select>
+									<select class="FL x-input-unit-3">
+										<option value="红旗">红旗</option>
+										<option value="林道">林道</option>
+										<option value="丰渔">丰渔</option>
+										<option value="大唐">大唐</option>
+										<option value="陈坎">陈坎</option>
+										<option value="郑飞">郑飞</option>
+										<option value="雪泉">雪泉</option>
+										<option value="新建">新建</option>
+										<option value="匣东">匣东</option>
+										<option value="兴隆">兴隆</option>
+										<option value="白水塘">白水塘</option>
+										<option value="南坎">南坎</option>
+										<option value="三合">三合</option>
+										<option value="条岗">条岗</option>
+										<option value="柳集">柳集</option>
+										<option value="跃进">跃进</option>
+										<option value="林河">林河</option>
+										<option value="新岗">新岗</option>
+										<option value="大曹庄">大曹庄</option>
+										<option value="曹唐">曹唐</option>
+										<option value="朝阳">朝阳</option>
+										<option value="墩北">墩北</option>
+									</select>
+									<select class="FL x-input-unit-4">
+										<option value="曹南">曹南</option>
+										<option value="周庄">周庄</option>
+										<option value="三烈">三烈</option>
+										<option value="盐港">盐港</option>
+										<option value="玉丹">玉丹</option>
+										<option value="丰民">丰民</option>
+										<option value="李良">李良</option>
+										<option value="许湾">许湾</option>
+										<option value="如珍">如珍</option>
+										<option value="丹平">丹平</option>
+										<option value="成俊">成俊</option>
+										<option value="新涂">新涂</option>
+										<option value="新同">新同</option>
+										<option value="永同">永同</option>
+										<option value="顺桥">顺桥</option>
+										<option value="陈良">陈良</option>
+									</select>
+									<select class="FL x-input-unit-5">
+										<option value="七灶">七灶</option>
+										<option value="掌李">掌李</option>
+										<option value="九灶">九灶</option>
+										<option value="同兴">同兴</option>
+										<option value="楼子">楼子</option>
+										<option value="十灶">十灶</option>
+										<option value="前三灶">前三灶</option>
+										<option value="昌兴">昌兴</option>
+										<option value="丰墩">丰墩</option>
+										<option value="王集">王集</option>
+										<option value="庄杨">庄杨</option>
+										<option value="中三灶">中三灶</option>
+										<option value="蒯东">蒯东</option>
+										<option value="东湾">东湾</option>
+										<option value="双岗">双岗</option>
+										<option value="后三灶">后三灶</option>
+										<option value="沿渠">沿渠</option>
+										<option value="陈吕">陈吕</option>
+									</select>
+									<select class="FL x-input-unit-6">
+										<option value="南湾">南湾</option>
+										<option value="大楼">大楼</option>
+										<option value="中心">中心</option>
+										<option value="新东">新东</option>
+										<option value="新北">新北</option>
+										<option value="冬季">冬季</option>
+										<option value="合力">合力</option>
+										<option value="新沟">新沟</option>
+										<option value="新西">新西</option>
+										<option value="吉沟">吉沟</option>
+										<option value="新风">新风</option>
+										<option value="新南">新南</option>
+										<option value="西沙胡">西沙胡</option>
+										<option value="新胜">新胜</option>
+										<option value="海宗">海宗</option>
+									</select>
+									<select class="FL x-input-unit-7">
+										<option value="双赢">双赢</option>
+										<option value="石狮">石狮</option>
+										<option value="胡庄">胡庄</option>
+										<option value="大刘">大刘</option>
+										<option value="姚场">姚场</option>
+										<option value="金星">金星</option>
+										<option value="闸东">闸东</option>
+										<option value="海口">海口</option>
+										<option value="官路">官路</option>
+										<option value="钟左">钟左</option>
+										<option value="韦岳">韦岳</option>
+										<option value="瓦许">瓦许</option>
+										<option value="旗杆">旗杆</option>
+										<option value="郝周">郝周</option>
+										<option value="郭李">郭李</option>
+										<option value="停翅港">停翅港</option>
+										<option value="汪朱">汪朱</option>
+										<option value="空寺">空寺</option>
+										<option value="陈集">陈集</option>
+									</select>
+									<select class="FL x-input-unit-8">
+										<option value="阜羊">阜羊</option>
+										<option value="后沙岗">后沙岗</option>
+										<option value="孟滩">孟滩</option>
+										<option value="大西">大西</option>
+										<option value="永昌">永昌</option>
+										<option value="单家岗">单家岗</option>
+										<option value="世明">世明</option>
+										<option value="外口">外口</option>
+										<option value="王山">王山</option>
+										<option value="于集">于集</option>
+										<option value="流泉">流泉</option>
+										<option value="蒲鸠">蒲鸠</option>
+										<option value="苏水">苏水</option>
+										<option value="南羊">南羊</option>
+										<option value="福海">福海</option>
+										<option value="孔苏">孔苏</option>
+										<option value="镇东">镇东</option>
+										<option value="镇西">镇西</option>
+										<option value="北沙">北沙</option>
+										<option value="果林">果林</option>
+									</select>
+									<select class="FL x-input-unit-9">
+										<option value="沿淮">沿淮</option>
+										<option value="临黄">临黄</option>
+										<option value="三联">三联</option>
+										<option value="浦东">浦东</option>
+										<option value="马集">马集</option>
+										<option value="芦浦">芦浦</option>
+										<option value="左范">左范</option>
+										<option value="东吴">东吴</option>
+										<option value="罗码">罗码</option>
+										<option value="裴王">裴王</option>
+										<option value="高扬">高扬</option>
+										<option value="三马">三马</option>
+										<option value="周门">周门</option>
+										<option value="新荡">新荡</option>
+										<option value="曹安">曹安</option>
+										<option value="双码">双码</option>
+										<option value="童营">童营</option>
+										<option value="长北">长北</option>
+										<option value="蒲南">蒲南</option>
+									</select>
+									<select class="FL x-input-unit-10">
+										<option value="孙合">孙合</option>
+										<option value="三鑫">三鑫</option>
+										<option value="渠东">渠东</option>
+										<option value="南殷">南殷</option>
+										<option value="西崔">西崔</option>
+										<option value="沟北">沟北</option>
+										<option value="戚桥">戚桥</option>
+										<option value="孔荡">孔荡</option>
+										<option value="邵湛">邵湛</option>
+										<option value="赵黄">赵黄</option>
+										<option value="侉周">侉周</option>
+										<option value="郑朱">郑朱</option>
+										<option value="河北">河北</option>
+										<option value="蔡张">蔡张</option>
+										<option value="前汪">前汪</option>
+										<option value="渠河">渠河</option>
+										<option value="陈徐">陈徐</option>
+										<option value="板湖">板湖</option>
+									</select>
+									<select class="FL x-input-unit-11">
+										<option value="黎明">黎明</option>
+										<option value="东南">东南</option>
+										<option value="沿河">沿河</option>
+										<option value="北堆">北堆</option>
+										<option value="嵩乳">嵩乳</option>
+										<option value="阜益">阜益</option>
+										<option value="东方">东方</option>
+										<option value="丁横">丁横</option>
+										<option value="镇南">镇南</option>
+										<option value="永西">永西</option>
+										<option value="五楼">五楼</option>
+										<option value="官庄">官庄</option>
+										<option value="合心">合心</option>
+										<option value="兴园">兴园</option>
+										<option value="永兴">永兴</option>
+										<option value="市民">市民</option>
+										<option value="新东">新东</option>
+										<option value="西城">西城</option>
+										<option value="海北">海北</option>
+									</select>
+									<select class="FL x-input-unit-12">
+										<option value="北郊">北郊</option>
+										<option value="大余">大余</option>
+										<option value="管计">管计</option>
+										<option value="西南">西南</option>
+										<option value="大有">大有</option>
+										<option value="蟠龙">蟠龙</option>
+										<option value="荡东">荡东</option>
+										<option value="振兴">振兴</option>
+										<option value="东兴">东兴</option>
+										<option value="角巷">角巷</option>
+										<option value="振业">振业</option>
+										<option value="周邱">周邱</option>
+										<option value="荡西">荡西</option>
+										<option value="樵农">樵农</option>
+										<option value="益东">益东</option>
+										<option value="益西">益西</option>
+										<option value="益南">益南</option>
+										<option value="益北">益北</option>
+										<option value="中市">中市</option>
+										<option value="王楼">王楼</option>
+										<option value="大东">大东</option>
+										<option value="倪东">倪东</option>
+										<option value="兴杨">兴杨</option>
+										<option value="马家荡">马家荡</option>
+									</select>
+									<select class="FL x-input-unit-13">
+										<option value="古颜">古颜</option>
+										<option value="梁庄">梁庄</option>
+										<option value="梁庄">韦唐</option>
+										<option value="许高">许高</option>
+										<option value="张秦">张秦</option>
+										<option value="小许">小许</option>
+										<option value="洋桥">洋桥</option>
+										<option value="联合">联合</option>
+										<option value="张刘">张刘</option>
+										<option value="大冲">大冲</option>
+										<option value="神墩">神墩</option>
+										<option value="前墩">前墩</option>
+										<option value="运河">运河</option>
+										<option value="刘庄">刘庄</option>
+										<option value="左杨">左杨</option>
+										<option value="富民">富民</option>
+										<option value="中桥">中桥</option>
+										<option value="梨元">梨元</option>
+										<option value="古风">古风</option>
+										<option value="古河">古河</option>
+									</select>
+									<select class="FL x-input-unit-14">
+										<option value="14">14</option>
+									</select>
+									<select class="FL x-input-unit-15">
+										<option value="15">15</option>
+									</select>
+									<select class="FL x-input-unit-16">
+										<option value="16">16</option>
+									</select>
+									<select class="FL x-input-unit-17">
+										<option value="17">17</option>
+									</select>
+									<select class="FL x-input-unit-18">
+										<option value="18">18</option>
+									</select>
+									<select class="FL x-input-unit-19">
+										<option value="19">19</option>
+									</select>
+									<select class="FL x-input-unit-20">
+										<option value="20">20</option>
+									</select>
+									<span class="FR x-ico"><img src="img/jt_b.png" width="100%"/></span>
+									<div class="clr"></div>
+								</div>
+								<div class="clr"></div>
+							</div>
+						</li>
+						<li>
+							<div class="x-fp-input-h2">
+								请选择走访城乡群众所在生产组<span class="x-ico"><img src="img/required-ico.png" width="100%"/></span>
+							</div>
+							<div class="">
+								<div class="x-fp-input x-fp-input-1">
+									<input class="FL" id="sczPicker"  type="text" name="" id="" value="" placeholder="请选择" readOnly="true"/>
+									<span class="FR x-ico"><img src="img/jt_b.png" width="100%"/></span>
+									<div class="clr"></div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="x-fp-input-h2">
+								请填写走访城乡群众信息<span class="x-ico"><img src="img/required-ico.png" width="100%"/></span>
+							</div>
+							<div class="x-qzxx">
+								<span class="x-name">户主姓名：</span>
+								<div class="x-fp-input x-fp-input-1">
+									<input class="x-sp-name" type="text" name="" id="" value="" placeholder="请填写"/>
+									<span class="x-error-hint">请输入正确姓名</span>
+								</div>
+							</div>
+							<div class="x-qzxx">
+								<span class="x-name">户主年龄：</span>
+								<div class="x-fp-input x-fp-input-1">
+									<input class="x-sp-age" type="text" name="" id="" value="" placeholder="请填写"/>
+									<span class="x-error-hint">请输入正确的年龄</span>
+								</div>
+							</div>
+							<div class="x-qzxx">
+								<span class="x-name">联系电话：</span>
+								<div class="x-fp-input x-fp-input-1">
+									<input class="x-sp-Number" type="text" name="" id="" value="" placeholder="请填写"/>
+									<span class="x-error-hint">请输入正确的手机号</span>
+								</div>
+							</div>
+							<div class="x-qzxx">
+								<span class="x-name">家庭人口：</span>
+								<div class="x-fp-input x-fp-input-1">
+									<input class="x-sp-members" type="text" name="" id="" value="" placeholder="请填写"/>
+									<span class="x-error-hint">请输入正确的家庭人口</span>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="x-fp-input-h2">
+								其他情况<span class="x-ico"><img src="img/required-ico.png" width="100%"/></span>
+							</div>
+							<div class="x-qtqk">
+								<textarea class="x-ts-textarea" name="" rows="3" cols="" placeholder="请填写"></textarea>
+							</div>
+							<div class="x-fp-hint x-fp-hint-1">
+								<span class="x-ico"><img src="img/hint-ico.png" width="100%"/></span>提示：家庭成员健康情况、从业情况、收入情况，承包土地面积及社会保障情况等。
+							</div>
+						</li>
+						<li>
+							<div class="x-fp-input-h2">
+								请选择诉求情况<span class="x-ico"><img src="img/required-ico.png" width="100%"/></span>
+							</div>
+							<div class="">
+								<div class="x-fp-input x-fp-input-1">
+									<input class="FL" id="sqPicker"  type="text" name="" id="" value="" placeholder="请选择" readOnly="true"/>
+									<span class="FR x-ico"><img src="img/jt_b.png" width="100%"/></span>
+									<div class="clr"></div>
+								</div>
+							</div>
+							<div class="x-fp-hint">
+								<span class="x-ico"><img src="img/hint-ico.png" width="100%"/></span>提示：选择“有”会弹出输入框。
+							</div>
+						</li>
+						<li class="x-input-sq">
+							<div class="x-fp-input-h2">
+								诉求内容<span class="x-ico"><img src="img/required-ico.png" width="100%"/></span>
+							</div>
+							<div class="x-qtqk">
+								<textarea name="" rows="3" cols="" placeholder="请填写"></textarea>
+							</div>
+						</li>
+					</ul>
+				</form>
+				<!--工商企业-->
+				<form class="x-fp-form x-fp-form-2 x-fp-form-gsqy" action="" method="post">
+					<ul>
+						<li>
+							<div class="x-fp-input-h2">
+								请填写走访工商企业信息<span class="x-ico"><img src="img/required-ico.png" width="100%"/></span>
+							</div>
+							<div class="x-qzxx">
+								<span class="x-name">企业名称：</span>
+								<div class="x-fp-input x-fp-input-1">
+									<input type="text" name="" id="" value="" placeholder="请填写"/>
+								</div>
+							</div>
+							<div class="x-qzxx">
+								<span class="x-name">法人代表：</span>
+								<div class="x-fp-input x-fp-input-1">
+									<input type="text" name="" id="" value="" placeholder="请填写"/>
+								</div>
+							</div>
+							<div class="x-qzxx">
+								<span class="x-name">2016年开票销售：</span>
+								<div class="x-fp-input x-fp-input-1">
+									<input type="text" name="" id="" value="" placeholder="请填写"/>
+								</div>
+							</div>
+							<div class="x-qzxx">
+								<span class="x-name">2016年入库税收：</span>
+								<div class="x-fp-input x-fp-input-1">
+									<input type="text" name="" id="" value="" placeholder="请填写"/>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="x-fp-input-h2">
+								其他情况<span class="x-ico"><img src="img/required-ico.png" width="100%"/></span>
+							</div>
+							<div class="x-qtqk">
+								<textarea class="x-ts-textarea" name="" rows="3" cols="" placeholder="请填写"></textarea>
+							</div>
+							<div class="x-fp-hint x-fp-hint-1">
+								<span class="x-ico"><img src="img/hint-ico.png" width="100%"/></span>提示：职工人数、经营范围或产品、占地面积、固定资产、技术改造、科技创新情况等。
+							</div>
+						</li>
+						<li>
+							<div class="x-fp-input-h2">
+								请选择诉求情况<span class="x-ico"><img src="img/required-ico.png" width="100%"/></span>
+							</div>
+							<div class="">
+								<div class="x-fp-input x-fp-input-1">
+									<input class="FL" id="sqPicker2"  type="text" name="" id="" value="" placeholder="请选择" readOnly="true"/>
+									<span class="FR x-ico"><img src="img/jt_b.png" width="100%"/></span>
+									<div class="clr"></div>
+								</div>
+							</div>
+							<div class="x-fp-hint">
+								<span class="x-ico"><img src="img/hint-ico.png" width="100%"/></span>提示：选择“有”会弹出输入框。
+							</div>
+						</li>
+						<li class="x-input-sq">
+							<div class="x-fp-input-h2">
+								诉求内容<span class="x-ico"><img src="img/required-ico.png" width="100%"/></span>
+							</div>
+							<div class="x-qtqk">
+								<textarea name="" rows="3" cols="" placeholder="请填写"></textarea>
+							</div>
+						</li>
+					</ul>
+				</form>
+				<!--基层单位-->
+				<form class="x-fp-form x-fp-form-2 x-fp-form-jcdw" action="" method="post">
+					<ul>
+						<li>
+							<div class="x-fp-input-h2">
+								请填写走访工商企业信息<span class="x-ico"><img src="img/required-ico.png" width="100%"/></span>
+							</div>
+							<div class="x-qzxx">
+								<span class="x-name">单位名称：</span>
+								<div class="x-fp-input x-fp-input-1">
+									<input type="text" name="" id="" value="" placeholder="请填写"/>
+								</div>
+							</div>
+							<div class="x-qzxx">
+								<span class="x-name">负责人：</span>
+								<div class="x-fp-input x-fp-input-1">
+									<input type="text" name="" id="" value="" placeholder="请填写"/>
+								</div>
+							</div>
+							<div class="x-qzxx">
+								<span class="x-name">联系电话：</span>
+								<div class="x-fp-input x-fp-input-1">
+									<input type="text" name="" id="" value="" placeholder="请填写"/>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="x-fp-input-h2">
+								其他情况<span class="x-ico"><img src="img/required-ico.png" width="100%"/></span>
+							</div>
+							<div class="x-qtqk">
+								<textarea class="x-ts-textarea" name="" rows="3" cols="" placeholder="请填写"></textarea>
+							</div>
+							<div class="x-fp-hint x-fp-hint-1">
+								<span class="x-ico"><img src="img/hint-ico.png" width="100%"/></span>提示：法定代表人、职工人数及构成情况，经费保障情况，职能履行情况等。
+							</div>
+						</li>
+						<li>
+							<div class="x-fp-input-h2">
+								请选择诉求情况<span class="x-ico"><img src="img/required-ico.png" width="100%"/></span>
+							</div>
+							<div class="">
+								<div class="x-fp-input x-fp-input-1">
+									<input class="FL" id="sqPicker3"  type="text" name="" id="" value="" placeholder="请选择" readOnly="true"/>
+									<span class="FR x-ico"><img src="img/jt_b.png" width="100%"/></span>
+									<div class="clr"></div>
+								</div>
+							</div>
+							<div class="x-fp-hint">
+								<span class="x-ico"><img src="img/hint-ico.png" width="100%"/></span>提示：选择“有”会弹出输入框。
+							</div>
+						</li>
+						<li class="x-input-sq">
+							<div class="x-fp-input-h2">
+								诉求内容<span class="x-ico"><img src="img/required-ico.png" width="100%"/></span>
+							</div>
+							<div class="x-qtqk">
+								<textarea name="" rows="3" cols="" placeholder="请填写"></textarea>
+							</div>
+						</li>
+					</ul>
+				</form>
+				<div class="x-bottom">
+					<!--上下页-->
+					<div class="x-ReadListPage">
+						<input class="x-btn x-sp-prev FL" type="button" name="" id="" value="上一页" />
+						<input class="x-btn x-sp-next FR" type="button" name="" id="" value="下一页" />
+						<div class="clr"></div>
+					</div>
+					<!--序号-->
+					<div class="x-orderNumber">
+						<div class="active">1</div>
+						<span class="x-ico">
+							<img src="img/xian-ico-yellow.png" width="100%" height="100%"/>
+						</span>
+						<div class="active">2</div>
+						<span class="x-ico">
+							<img src="img/xian-ico-hui.png" width="100%" height="100%"/>
+						</span>
+						<div>3</div>
+					</div>
+					<!--技术支持-->
+					<p class="x-Support">技术支持<a href="http://www.yeebok.com/">亿柏嘉软件技术有限公司</a></p>
+				</div>
+			</div>
+			<div class="x-bottom-1">
+				<!--上下页-->
+				<div class="x-ReadListPage">
+					<input class="x-btn x-sp-prev FL" type="button" name="" id="" value="上一页" />
+					<input class="x-btn x-sp-next-1 FR" type="button" name="" id="" value="下一页" />
+					<div class="clr"></div>
+				</div>
+				<!--序号-->
+				<div class="x-orderNumber">
+					<div class="active">1</div>
+					<span class="x-ico">
+						<img src="img/xian-ico-yellow.png" width="100%" height="100%"/>
+					</span>
+					<div class="active">2</div>
+					<span class="x-ico">
+						<img src="img/xian-ico-hui.png" width="100%" height="100%"/>
+					</span>
+					<div>3</div>
+				</div>
+				<!--技术支持-->
+				<p class="x-Support">技术支持<a href="http://www.yeebok.com/">亿柏嘉软件技术有限公司</a></p>
+			</div>
+		</div>
+		
+		<script src="js/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/sm.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

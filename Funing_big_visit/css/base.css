@@ -1,0 +1,540 @@
+.page {
+	background-color: #fff;
+}
+
+
+/*登录页面*/
+
+.content {
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+
+input {
+	-webkit-user-modify: read-write-plaintext-only;
+}
+
+input,
+textarea {
+	-webkit-appearance: none;
+	box-shadow: none;
+}
+
+.x-index {
+	text-align: center;
+}
+
+.x-i-h2 {
+	font-size: 1.25rem;
+	font-weight: bold;
+	background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(#ff9f42), to(#ff7e00));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	margin-top: 3rem;
+	line-height: 1;
+}
+
+.x-i-hint {
+	font-size: 0.95rem;
+	color: #333333;
+	line-height: 1;
+	margin: 1.2rem 0;
+}
+
+.x-i-form {
+	font-size: 0;
+}
+
+.x-i-input-parent {
+	border: 1px solid #dddddd;
+	border-radius: 3px;
+	display: inline-block;
+	padding: 0.5rem;
+	background-color: #f7f7f7;
+	margin-top: 0.5rem;
+	width: 77.8%;
+	text-align: left;
+}
+
+.x-i-input-parent .x-icon {
+	display: inline-block;
+	width: 0.8rem;
+	vertical-align: middle;
+	width: 5%;
+}
+
+.x-i-input-parent input {
+	font-size: .75rem;
+	display: inline-block;
+	vertical-align: middle;
+	border: 0;
+	background-color: #f7f7f7;
+	margin-left: 0.5rem;
+	width: 90%;
+}
+
+
+/*登录按钮*/
+
+.x-i-submit-btn {
+	width: 77.8%;
+	font-size: .75rem;
+	color: #fefefe;
+	background-color: #ff8f22;
+	border-radius: 3px;
+	border: 0;
+	padding: 0.5rem;
+}
+
+
+/*注册按钮*/
+
+.x-zc-btn {
+	display: inline-block;
+	font-size: .75rem;
+	color: #ff7e00;
+	padding-bottom: .05rem;
+	margin-top: .5rem;
+	border-bottom: 1px solid #ff7e00;
+}
+
+
+/*忘记密码*/
+
+.x-forgetPassword {
+	text-align: right;
+	width: 77.8%;
+	margin: .5rem auto;
+}
+
+.x-forgetPassword a {
+	font-size: .6rem;
+	color: #333333;
+}
+
+
+/*技术支持*/
+
+.x-Support,
+.x-Support a {
+	font-size: .5rem;
+	color: #808080;
+}
+
+.x-Support {
+	text-align: center;
+	width: 100%;
+	background-color: #c9c9c9;
+	line-height: 1.8;
+}
+
+.x-Support a {
+	margin-left: .3rem;
+}
+
+
+/*第一页*/
+
+.x-fp-form {
+	padding: 0 .5rem;
+}
+
+.x-fp-form ul {
+	margin-bottom: .75rem;
+}
+
+.x-fp-form li {
+	padding: .5rem 0;
+	padding-bottom: 0;
+}
+
+.x-fp-input-h2 {
+	font-size: 0.75rem;
+	color: #333333;
+	line-height: 1;
+	margin: .5rem 0;
+}
+
+.x-fp-input-h2 .x-ico {
+	display: inline-block;
+	width: .25rem;
+	vertical-align: top;
+	margin-left: 0.25rem;
+}
+
+.x-fp-input-h2 .x-ico img {
+	vertical-align: top;
+}
+
+.x-fp-input {
+	width: 47%;
+	border: 1px solid #dddddd;
+	border-radius: 3px;
+	background-color: #f7f7f7;
+	font-size: .7rem;
+	position: relative;
+}
+
+.x-fp-input input {
+	width: 100%;
+	border: 0;
+	background-color: #f7f7f7;
+	padding: .5rem;
+	border-radius: 3px;
+	height: 2rem;
+}
+
+.x-fp-input select {
+	width: 100%;
+	height: 2rem;
+	border: 0;
+	padding: .5rem;
+	border-radius: 3px;
+	background-color: #f7f7f7;
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+}
+
+.x-fp-input .x-ico {
+	width: .8rem;
+	position: absolute;
+	right: .5rem;
+	top: .5rem;
+	pointer-events: none
+}
+
+.x-fp-input .x-ico img {
+	position: relative;
+	top: -.1rem;
+}
+
+.x-fp-hint {
+	font-size: .6rem;
+	line-height: 1.3;
+	margin-top: .5rem;
+	color: #e94a4a;
+}
+
+.x-fp-hint .x-ico {
+	display: inline-block;
+	width: .5rem;
+	position: relative;
+	top: -.03rem;
+	margin-right: .3rem;
+}
+
+.x-fp-input-1 {
+	width: 100%;
+}
+
+.x-btn {
+	width: 100%;
+	padding: .5rem 0;
+	background-color: #ff7e00;
+	border: 0;
+	border-radius: 3px;
+	color: #fefefe;
+	font-size: .75rem;
+}
+
+
+/*序号*/
+
+.x-orderNumber {
+	text-align: center;
+	font-size: 0;
+	margin: .75rem 0;
+}
+
+.x-orderNumber div {
+	display: inline-block;
+	border: 1px solid #dddddd;
+	color: #dddddd;
+	font-size: .65rem;
+	border-radius: 50%;
+	width: 1.3rem;
+	height: 1.3rem;
+	vertical-align: middle;
+	line-height: 1.2rem;
+}
+
+.x-orderNumber div.active {
+	border: 1px solid #ff7e00;
+	color: #ff7e00;
+}
+
+.x-orderNumber .x-ico {
+	display: inline-block;
+	vertical-align: middle;
+	width: .6rem;
+	height: 1px;
+}
+
+
+/*第二页*/
+
+.x-ReadListPage {
+	padding: 0 .5rem;
+}
+
+.x-ReadListPage .x-btn {
+	width: 48.5%;
+}
+
+
+/*群众信息*/
+
+.x-qzxx {
+	font-size: 0;
+	margin-bottom: .5rem;
+}
+
+.x-qzxx:last-child {
+	margin-bottom: 0;
+}
+
+.x-qzxx .x-name {
+	width: 21%;
+	display: inline-block;
+	vertical-align: middle;
+	font-size: .65rem;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.x-qzxx .x-fp-input {
+	width: 79%;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+
+/*其他情况*/
+
+.x-qtqk textarea {
+	width: 100%;
+	resize: none;
+	padding: .5rem;
+	border: 1px solid #dddddd;
+	border-radius: 3px;
+	background-color: #f7f7f7;
+}
+
+
+/*诉求情况*/
+
+.x-input-sq {
+	display: none;
+}
+
+.x-fp-hint-1 {
+	margin-top: 0;
+}
+
+.x-fp-form-2 {
+	display: none;
+}
+
+.x-fp-form-2 li:first-child {
+	padding-top: 0;
+}
+
+
+/*工商企业页面*/
+
+.x-fp-form-gsqy .x-qzxx .x-name {
+	width: 33%;
+	text-align: right;
+}
+
+.x-fp-form-gsqy .x-qzxx .x-fp-input {
+	width: 67%;
+}
+
+.x-bottom-1 {
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	z-index: 3;
+}
+
+.x-bottom {
+	display: none;
+}
+
+
+/*第三页*/
+
+.x-tp-submit-btn {
+	padding: 0 .5rem;
+}
+
+.x-tp-submit-btn .x-btn-hui {
+	background-color: #dddddd;
+	margin-top: .5rem;
+}
+
+
+/*举报*/
+
+.x-report {
+	padding: .5rem;
+	padding-bottom: 0;
+	text-align: right;
+	line-height: 1;
+}
+
+.x-report a {
+	font-size: .6rem;
+	color: #333333;
+}
+
+.x-tp-body {
+	text-align: center;
+	font-size: .75rem;
+	color: #333333;
+	font-weight: bold;
+	margin-top: 10rem;
+	padding: 0 .5rem;
+}
+
+
+/*遮罩*/
+
+.x-zhezhao {
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	opacity: .6;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	display: none;
+}
+
+
+/*弹窗*/
+
+.x-popup {
+	position: fixed;
+	top: 50%;
+	z-index: 3;
+	background-color: #fff;
+	width: 72.7%;
+	left: 50%;
+	margin-left: -36.35%;
+	border-radius: 3px;
+	padding: .5rem;
+	text-align: center;
+	font-size: .75rem;
+	color: #333333;
+	visibility: hidden;
+}
+
+.x-popup .x-ico {
+	display: inline-block;
+	width: 16.3%;
+	margin-top: 2rem;
+}
+
+.x-popup p {
+	margin: 1rem 0 2.5rem 0;
+}
+
+.x-popup-zhmm {
+	position: relative;
+	overflow: hidden;
+}
+
+.x-popup-zhmm p {
+	margin: 1rem 0!important;
+}
+
+.x-cloce-ico {
+	position: absolute;
+	right: -.6rem;
+	top: -.8rem;
+	padding: 1.2rem;
+	width: 3rem;
+}
+
+.x-popup-zhmm .x-ico {
+	width: 20%;
+}
+
+.x-popup-zhmm .x-ico-1 {
+	display: inline-block;
+	width: .7rem;
+	position: relative;
+	top: -.06rem;
+	margin-right: .3rem;
+}
+
+.x-popup-zhmm a {
+	display: inline-block;
+}
+
+
+/*修改picker样式*/
+
+.picker-modal {
+	position: fixed;
+	bottom: 0;
+}
+
+.picker-items-col {
+	width: 100%;
+}
+
+/*错误提示*/
+
+.x-error-hint {
+	font-size: 0.5rem;
+	color: #e94a4a;
+	display: none;
+	position: absolute;
+	left: 0;
+	bottom: -.7rem;
+}
+
+/*联懂选择的下拉*/
+
+.x-fp-input-dw select {
+	display: none;
+}
+
+.x-fp-input-dw select.x-select-no,
+.x-fp-input-dw select.x-select-no-2 {
+	display: block;
+}
+
+/*按钮页面*/
+
+/*欢迎语*/
+
+.x-b-welcome {
+	font-size: .75rem;
+	margin: 20% 0;
+}
+
+.x-userName {
+	color: #ff7e00;
+}
+
+/*三个按钮*/
+
+.x-b-btn {
+	width: 77.8%;
+	margin-bottom: 1.2rem;
+}
+
+.x-UserSignIn-btn {
+	background-color: #109585;
+}
+
+.x-query-btn {
+	background-color: #27a5e3;
+}

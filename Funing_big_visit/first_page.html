@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	    <title>阜宁县大走访活动</title>
+		<link rel="stylesheet" type="text/css" href="css/reset_app.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/sm.min.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/base.css"/>
+	</head>
+	<body>
+		<div class="page">
+			<div class="content">
+				<!--顶部图片-->
+				<div class="x-fp-top">
+					<img src="img/first-page-img.png" width="100%"/>
+				</div>
+				<!--个人信息表单-->
+				<form class="x-fp-form" action="" method="post">
+					<ul>
+						<li>
+							<div class="x-fp-input-h2">
+								您的单位<span class="x-ico"><img src="img/required-ico.png" width="100%"/></span>
+							</div>
+							<div class="">
+								<div class="x-fp-input FL">
+									<input class="FL x-select-input" type="hidden"/>
+		
+									<select class="FL ftPicker" id='ftPicker'>
+										<option value="请选择分团" disabled selected >请选择分团</option>
+										<option value="开发区分团">开发区分团</option>
+										<option value="高新区分团">高新区分团</option>
+										<option value="阜城街道分团">阜城街道分团</option>
+										<option value="益林镇分团">益林镇分团</option>
+										<option value="板湖镇分团">板湖镇分团</option>
+										<option value="东沟镇分团">东沟镇分团</option>
+										<option value="古河镇分团">古河镇分团</option>
+										<option value="沟墩镇分团">沟墩镇分团</option>
+										<option value="陈良镇分团">陈良镇分团</option>
+										<option value="吴滩街道分团">吴滩街道分团</option>
+										<option value="罗桥镇分团">罗桥镇分团</option>
+										<option value="金沙湖街道分团">金沙湖街道分团</option>
+										<option value="芦蒲镇分团">芦蒲镇分团</option>
+										<option value="硕集社区分团">硕集社区分团</option>
+										<option value="现代服务园区分团">现代服务园区分团</option>
+										<option value="三灶镇分团">三灶镇分团</option>
+										<option value="羊寨镇分团">羊寨镇分团</option>
+										<option value="新沟镇分团">新沟镇分团</option>
+										<option value="公兴社区分团">公兴社区分团</option>
+										<option value="陈集镇分团">陈集镇分团</option>
+									</select>
+									<span class="FR x-ico"><img src="img/jt_b.png" width="100%"/></span>
+									<div class="clr"></div>
+								</div>
+								<div class="x-fp-input FR x-fp-input-dw">
+									<input class="FL x-select-input x-select-input-1" type="hidden"/>
+									<div class="x-select-no-p">
+										<select class="FL x-select-no" name="" disabled>
+											<option value="请选择单位">请选择单位</option>
+										</select>
+									</div>
+									<select class="FL x-input-unit-1">
+										<option value="开发区">开发区</option>
+										<option value="发改委">发改委</option>
+										<option value="商务局">商务局</option>
+										<option value="审计局">审计局</option>
+										<option value="工行">工行</option>
+									</select>
+									<select class="FL x-input-unit-2">
+										<option value="高新区">高新区</option>
+										<option value="水务局(含驻地在县城的直属事业单位)">水务局(含驻地在县城的直属事业单位)</option>
+										<option value="工商联">工商联</option>
+										<option value="气象局">气象局</option>
+										<option value="电信公司">电信公司</option>
+									</select>
+									<select class="FL x-input-unit-3">
+										<option value="阜城街道">阜城街道</option>
+										<option value="公安局">公安局</option>
+										<option value="住建局(含直属事业单位)">住建局(含直属事业单位)</option>
+										<option value="人社局">人社局</option>
+										<option value="市场监管局">市场监管局</option>
+										<option value="老干局">老干局</option>
+										<option value="总工会">总工会</option>
+										<option value="农商行">农商行</option>
+									</select>
+									<select class="FL x-input-unit-4">
+										<option value="益林镇">益林镇</option>
+										<option value="人大办">人大办</option>
+										<option value="教育局">教育局</option>
+										<option value="物价局">物价局</option>
+										<option value="运管处">运管处</option>
+										<option value="建行">建行</option>
+									</select>
+									<select class="FL x-input-unit-5">
+										<option value="板湖镇">板湖镇</option>
+										<option value="政法委">政法委</option>
+										<option value="检察院">检察院</option>
+										<option value="项目办">项目办</option>
+										<option value="开发局">开发局</option>
+										<option value="盐务局">盐务局</option>
+									</select>
+									<select class="FL x-input-unit-6">
+										<option value="东沟镇">东沟镇</option>
+										<option value="政协办">政协办</option>
+										<option value="农工办">农工办</option>
+										<option value="城管局">城管局</option>
+										<option value="司法局">司法局</option>
+										<option value="民宗局">民宗局</option>
+										<option value="党史办">党史办</option>
+										<option value="联通公司">联通公司</option>
+									</select>
+									<select class="FL x-input-unit-7">
+										<option value="古河镇">古河镇</option>
+										<option value="卫计委(含卫生监督所、疾控中心)">卫计委(含卫生监督所、疾控中心)</option>
+										<option value="人行">人行</option>
+										<option value="邮政银行">邮政银行</option>
+									</select>
+									<select class="FL x-input-unit-8">
+										<option value="沟墩镇">沟墩镇</option>
+										<option value="纪委">纪委</option>
+										<option value="国土局">国土局</option>
+										<option value="城资公司">城资公司</option>
+										<option value="农机局">农机局</option>
+										<option value="科技局">科技局</option>
+										<option value="科协">科协</option>
+										<option value="团县委">团县委</option>
+										<option value="烟草局">烟草局</option>
+									</select>
+									<select class="FL x-input-unit-9">
+										<option value="陈良镇">陈良镇</option>
+										<option value="宣传部(含外宣办文明办、文联)">宣传部(含外宣办文明办、文联)</option>
+										<option value="民政局">民政局</option>
+										<option value="地税局">地税局</option>
+										<option value="新闻中心">新闻中心</option>
+										<option value="中行">中行</option>
+									</select>
+									<select class="FL x-input-unit-10">
+										<option value="吴滩街道">吴滩街道</option>
+										<option value="法院">法院</option>
+										<option value="经信委">经信委</option>
+										<option value="统计局">统计局</option>
+										<option value="党校">党校</option>
+									</select>
+									<select class="FL x-input-unit-11">
+										<option value="罗桥镇">罗桥镇</option>
+										<option value="国税局">国税局</option>
+										<option value="编办">编办</option>
+										<option value="妇联">妇联</option>
+										<option value="档案局">档案局</option>
+										<option value="江苏银行">江苏银行</option>
+									</select>
+									<select class="FL x-input-unit-12">
+										<option value="金沙湖街道">金沙湖街道</option>
+										<option value="移动公司">移动公司</option>
+										<option value="人保寿险">人保寿险</option>
+									</select>
+									<select class="FL x-input-unit-13">
+										<option value="芦蒲镇">芦蒲镇</option>
+										<option value="粮食局">粮食局</option>
+										<option value="供销社">供销社</option>
+										<option value="农行">农行</option>
+									</select>
+									<select class="FL x-input-unit-14">
+										<option value="硕集社区">硕集社区</option>
+										<option value="财政局">财政局</option>
+										<option value="民生银行">民生银行</option>
+										<option value="人寿保险">人寿保险</option>
+									</select>
+									<select class="FL x-input-unit-15">
+										<option value="现代服务业园区">现代服务业园区</option>
+										<option value="人保财险">人保财险</option>
+										<option value="人寿财险">人寿财险</option>
+									</select>
+									<select class="FL x-input-unit-16">
+										<option value="三灶镇">三灶镇</option>
+										<option value="政府办(含金融办)">政府办(含金融办)</option>
+										<option value="组织部">组织部</option>
+										<option value="政务办">政务办</option>
+										<option value="信访局">信访局</option>
+										<option value="阜宁有线">阜宁有线</option>
+									</select>
+									<select class="FL x-input-unit-17">
+										<option value="羊寨镇">羊寨镇</option>
+										<option value="县委办(含台侨办)">县委办(含台侨办)</option>
+										<option value="农委(含驻地在县城的直属事业单位)">农委(含驻地在县城的直属事业单位)</option>
+										<option value="林渔局">林渔局</option>
+										<option value="残联">残联</option>
+										<option value="供电公司">供电公司</option>
+									</select>
+									<select class="FL x-input-unit-18">
+										<option value="新沟镇">新沟镇</option>
+										<option value="交运局()含公路站、海事处)">交运局()含公路站、海事处)</option>
+										<option value="红十字会">红十字会</option>
+										<option value="常熟农商行">常熟农商行</option>
+									</select>
+									<select class="FL x-input-unit-19">
+										<option value="公兴社区">公兴社区</option>
+										<option value="公共资源交易办">公共资源交易办</option>
+										<option value="文广新局">文广新局</option>
+										<option value="县广播电视台">县广播电视台</option>
+										<option value="机关工委">机关工委</option>
+										<option value="统战部">统战部</option>
+										<option value="邮政公司">邮政公司</option>
+									</select>
+									<select class="FL x-input-unit-20">
+										<option value="陈集镇">陈集镇</option>
+										<option value="环保局">环保局</option>
+										<option value="安监局">安监局</option>
+										<option value="住房公积金">住房公积金</option>
+										<option value="农发行">农发行</option>
+									</select>
+									<span class="FR x-ico"><img src="img/jt_b.png" width="100%"/></span>
+									<div class="clr"></div>
+								</div>
+								<div class="clr"></div>
+							</div>
+							<div class="x-fp-hint">
+								<span class="x-ico"><img src="img/hint-ico.png" width="100%"/></span>提示：法院、公安局、市场监管局、国土局、水务局、农委、农行、农商行等设在镇区机构的工作人员由各镇区分团统筹安排。
+							</div>
+						</li>
+						<li>
+							<div class="x-fp-input-h2">
+								您的姓名<span class="x-ico"><img src="img/required-ico.png" width="100%"/></span>
+							</div>
+							<div class="">
+								<div class="x-fp-input x-fp-input-1">
+									<input class="x-fp-name" type="text" name="" id="" value=""/>
+									<span class="x-error-hint">请输入正确姓名</span>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="x-fp-input-h2">
+								您的手机号码<span class="x-ico"><img src="img/required-ico.png" width="100%"/></span>
+							</div>
+							<div class="">
+								<div class="x-fp-input x-fp-input-1">
+									<input class="x-fp-Number" type="text" name="" id="" value=""/>
+									<span class="x-error-hint">请输入正确的手机号</span>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<input class="x-btn x-fp-next" type="button" value="下一页"/>
+				</form>
+				<!--序号-->
+				<div class="x-orderNumber">
+					<div class="active">1</div>
+					<span class="x-ico">
+						<img src="img/xian-ico-hui.png" width="100%" height="100%"/>
+					</span>
+					<div>2</div>
+					<span class="x-ico">
+						<img src="img/xian-ico-hui.png" width="100%" height="100%"/>
+					</span>
+					<div>3</div>
+				</div>
+				<!--技术支持-->
+				<p class="x-Support">技术支持<a href="http://www.yeebok.com/">亿柏嘉软件技术有限公司</a></p>
+			</div>
+		</div>
+		<script src="js/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/sm.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/common.js" type="text/javascript" charset="utf-8"></script>		
+	</body>
+</html>
