@@ -1,0 +1,11 @@
+.g-hd {
+	z-index: 1;
+}
+
+.m-banner {
+	z-index: 2;
+}
+
+body {
+	background: none;
+}
