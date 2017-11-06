@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <title>投资者关系</title>
+	    <link rel="shortcut icon" href="/favicon.ico">
+	    <meta name="apple-mobile-web-app-capable" content="yes">
+	    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+	    <meta content="telephone=no" name="format-detection" />
+		<meta name="format-detection" content="email=no" />
+	    <link rel="stylesheet" type="text/css" href="css/reset_app.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/sm.min.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/animate.min.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/swiper-3.4.1.min.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/new_file.css"/>
+	    <style type="text/css">
+	    	.page{background:url(img/sy_2_gb.png) no-repeat;background-size: 100% 100%;}
+	    	.xl_investor_body{position: relative;z-index: 2;}
+	    	.xl_investor_zzjg span{display:block;width: 80%;margin: 0 auto;margin-top: 5%;}
+	    	.xl_investor_tdfc{padding: 1rem;}
+	    	.xl_investor_tdfc ul li{width: 46%;padding: 0.3rem;background-color: #fff;border: 1px solid #cccccc;float: left;margin: 0.3rem 2%;padding-bottom: 0;}
+	    	.xl_investor_tdfc ul li .xl_span_img{display: inline-block;/*height: 9rem;overflow: hidden;*/width: 100%;}
+	    	.xl_investor_tdfc ul li .xl_name{text-align: center;height: 1.8rem;line-height: 1.8rem;font-size: 0.8rem;white-space:nowrap;overflow: hidden;text-overflow : ellipsis}
+	    	
+	    	
+	    	
+	    	/*弹窗*/
+			.xl_tdfc_zhezhao{
+				width: 100%;
+				height: 100%;
+				position: fixed;
+				top: 0;
+				left: 0;
+				display: none;
+				background-color: #000;
+				opacity: 0.5;
+			  	filter:alpha(opacity=50);
+			 	-moz-opacity:0.5;
+			 	-khtml-opacity: 0.5;
+			 	z-index: 19;
+			}
+			.xl_tzz_tdfc_xq{
+				position: fixed;
+				left: 50%;
+				top: 50%;
+				margin-left: -40%;
+				margin-top: -4.5rem;
+				background-color: #fff;
+				width: 80%;
+				overflow: hidden;
+				border: 0.3rem solid #eeeeee;
+				z-index: 20000;
+				display: none;
+			}
+			.xl_tzz_tdfc_xq .FL{
+				width: 40%;
+				background-color: #eee;
+			}
+			.xl_tzz_tdfc_xq .FR{
+				width: 60%;
+				padding:0 3%;
+			}
+			.xl_tzz_tdfc_xq   .xl_h2{
+				font-size: 0.95rem;
+				color: #333333;
+				margin-top: 0.8rem;
+			}
+			.xl_tzz_tdfc_xq   .xl_p{
+				overflow: hidden;
+				display: -webkit-box;
+			    -webkit-box-orient: vertical;
+			    -webkit-line-clamp: 3;
+			    font-size: 0.55rem;
+			    color: #666666;
+			    margin-top: 0.4rem;
+				
+			}
+			.xl_tzz_tdfc_xq_close{
+				position: absolute;
+				top: 0;
+				right: 0;
+				padding: 0.5rem;
+			}
+			.xl_investor_body{
+				display: none;
+			}
+			
+			@media screen and (max-width: 340px) {
+				.xl_investor_tdfc ul li .xl_name{
+					font-size: 0.6rem;
+				}
+			}
+	    </style>
+	</head>
+	<body>
+		<div class="page">
+			<div class="content">
+				<!--第一页-->
+				<div class="xl_investor_body xl_investor_zzjg animated fadeInRight" style="display: block;">
+					<span><img src="img/zzjg_img.png"/ width="100%"></span>
+				</div>
+				<!--第二页-->
+				<div class="xl_investor_body xl_investor_tdfc  animated fadeInRight">
+					<ul>
+						<li>
+							<span class="xl_span_img"><img src="img/tdfc_img1.jpg"/ width="100%"></span><br />
+							<div class="xl_name">
+								曾海波
+							</div>
+						</li>
+						<li>
+							<span class="xl_span_img"><img src="img/tdfc_img2.jpg"/ width="100%"></span><br />
+							<div class="xl_name">
+								蒯成官
+							</div>
+						</li>
+						<li>
+							<span class="xl_span_img"><img src="img/tdfc_img3.jpg"/ width="100%"></span><br />
+							<div class="xl_name">
+								欧阳武
+							</div>
+						</li>
+						<li>
+							<span class="xl_span_img"><img src="img/tdfc_img4.jpg"/ width="100%"></span><br />
+							<div class="xl_name">
+								胡在春
+							</div>
+						</li>
+						<li>
+							<span class="xl_span_img"><img src="img/tdfc_img5.jpg"/ width="100%"></span><br />
+							<div class="xl_name">
+								崔在爀
+							</div>
+						</li>
+						<li>
+							<span class="xl_span_img"><img src="img/tdfc_img6.jpg"/ width="100%"></span><br />
+							<div class="xl_name">
+								郑伟 主任
+							</div>
+						</li>
+						<li>
+							<span class="xl_span_img"><img src="img/tdfc_img7.jpg"/ width="100%"></span><br />
+							<div class="xl_name">
+								Choi sang mun
+							</div>
+						</li>
+						<li>
+							<span class="xl_span_img"><img src="img/tdfc_img8.jpg"/ width="100%"></span><br />
+							<div class="xl_name">
+								金志修
+							</div>
+						</li>
+						<div class="clr"></div>
+					</ul>
+				</div>
+				
+				
+				
+	
+			</div>
+			<!--遮罩-->
+			<div class="xl_tdfc_zhezhao">
+						
+			</div>
+			<!--人物资料详情弹窗-->
+			<div class="xl_tzz_tdfc_xq animated xl_tzz_tdfc_xq1">
+				<span class="FL">
+					<img src="img/tdfc_img1.jpg"/ width="100%">
+				</span>
+				<div class="FR">
+					<p class="xl_h2">曾海波</p>
+					<p class="xl_p">中华医学会整形外科分会会员<br />韩国仁济医科大学整形外科“客座教授”</p>
+					<p class="xl_p">擅长：微整形、面部整形、面部除皱、无创塑形、PPDO线雕、面部年轻化等。</p>
+				</div>
+				<div class="clr"></div>
+				<span class="xl_tzz_tdfc_xq_close"><img src="img/closeico.png"/ width="100%"></span>
+			</div>
+			<div class="xl_tzz_tdfc_xq  animated  xl_tzz_tdfc_xq1">
+				<span class="FL">
+					<img src="img/tdfc_img2.jpg"/ width="100%">
+				</span>
+				<div class="FR">
+					<p class="xl_h2">蒯成官</p>
+					<p class="xl_p">张家港唯恩皮肤美容主治医师<br />中华医学会医学美学与美容学分会会员</p>
+					<p class="xl_p">擅长：微整形、面部整形、面部除皱、无创塑形、PPDO线雕、面部年轻化等。</p>
+				</div>
+				<div class="clr"></div>
+				<span class="xl_tzz_tdfc_xq_close"><img src="img/closeico.png"/ width="100%"></span>
+			</div>
+			<div class="xl_tzz_tdfc_xq animated xl_tzz_tdfc_xq1">
+				<span class="FL">
+					<img src="img/tdfc_img3.jpg"/ width="100%">
+				</span>
+				<div class="FR">
+					<p class="xl_h2">欧阳武</p>
+					<p class="xl_p">中国著名综合整形大师<br />明星御用整形大师、无创塑形、PPDO线雕...</p>
+				</div>
+				<div class="clr"></div>
+				<span class="xl_tzz_tdfc_xq_close"><img src="img/closeico.png"/ width="100%"></span>
+			</div>
+			<div class="xl_tzz_tdfc_xq animated xl_tzz_tdfc_xq1">
+				<span class="FL">
+					<img src="img/tdfc_img4.jpg"/ width="100%">
+				</span>
+				<div class="FR">
+					<p class="xl_h2">胡在春</p>
+					<p class="xl_p">唯恩国际医疗事业集团首席整形专家<br />整形外科学会 正式会员...</p>
+				</div>
+				<div class="clr"></div>
+				<span class="xl_tzz_tdfc_xq_close"><img src="img/closeico.png"/ width="100%"></span>
+			</div>
+			<div class="xl_tzz_tdfc_xq animated xl_tzz_tdfc_xq1">
+				<span class="FL">
+					<img src="img/tdfc_img5.jpg"/ width="100%">
+				</span>
+				<div class="FR">
+					<p class="xl_h2">崔在爀</p>
+					<p class="xl_p">亚洲明星御用权威整形专家 <br />唯恩国际医疗事业集团首席专...</p>
+				</div>
+				<div class="clr"></div>
+				<span class="xl_tzz_tdfc_xq_close"><img src="img/closeico.png"/ width="100%"></span>
+			</div>
+			<div class="xl_tzz_tdfc_xq animated xl_tzz_tdfc_xq1">
+				<span class="FL">
+					<img src="img/tdfc_img6.jpg"/ width="100%">
+				</span>
+				<div class="FR">
+					<p class="xl_h2">郑伟 主任</p>
+					<p class="xl_p">“针功夫”注射专家  整形外科硕士<br />唯恩国际台湾微整形首席专家...</p>
+				</div>
+				<div class="clr"></div>
+				<span class="xl_tzz_tdfc_xq_close"><img src="img/closeico.png"/ width="100%"></span>
+			</div>
+			<div class="xl_tzz_tdfc_xq animated xl_tzz_tdfc_xq1">
+				<span class="FL">
+					<img src="img/tdfc_img7.jpg"/ width="100%">
+				</span>
+				<div class="FR">
+					<p class="xl_h2">Choi sang mun</p>
+					<p class="xl_p">擅长项目：眼部整形，面部综合整形</p>
+					<p class="xl_p">擅长：微整形... </p>
+				</div>
+				<div class="clr"></div>
+				<span class="xl_tzz_tdfc_xq_close"><img src="img/closeico.png"/ width="100%"></span>
+			</div>
+			<div class="xl_tzz_tdfc_xq animated xl_tzz_tdfc_xq1">
+				<span class="FL">
+					<img src="img/tdfc_img8.jpg"/ width="100%">
+				</span>
+				<div class="FR">
+					<p class="xl_h2">金志修</p>
+					<p class="xl_p">擅长项目：眼部整形，面部综合整形</p>
+					<p class="xl_p">擅长：微整形、面部整形、面部除皱、无创塑形...</p>
+				</div>
+				<div class="clr"></div>
+				<span class="xl_tzz_tdfc_xq_close"><img src="img/closeico.png"/ width="100%"></span>
+			</div>
+			
+			
+			<!--背景方块点缀-->
+			<span class="xl_bg_kuai xl_bg_kuai_1"><img src="img/bg_ico_1.png"/ width="100%"></span>
+			<span class="xl_bg_kuai xl_bg_kuai_2"><img src="img/bg_ico_1.png"/ width="100%"></span>
+			<span class="xl_bg_kuai xl_bg_kuai_3"><img src="img/bg_ico_1.png"/ width="100%"></span>
+			<span class="xl_bg_kuai xl_bg_kuai_4"><img src="img/bg_ico_1.png"/ width="100%"></span>
+			
+			
+			
+			<!--弹窗导航-->
+			<div class="xl_nav">
+				<ul class="animated flipInX">
+					<li>
+						<a href="index.html">首页</a>
+					</li>
+					<li>
+						<a href="aboutUs.html">走进唯恩荟</a>
+					</li>
+					<li>
+						<a href="newsMedia.html">新闻媒体</a>
+					</li>
+					<li>
+						<a href="hr.html">人力资源</a>
+					</li>
+					<li>
+						<a href="investorRelations.html">投资者关系</a>
+					</li>
+					<li>
+						<a href="connectUs.html" style="border: 0;">联系我们</a>
+					</li>
+					<span class="xl_close"><img src="img/close_ico.png"/ width="100%"></span>
+				</ul>
+			</div>
+			<!--遮罩-->
+			<div class="xl_zhezhao">
+				
+			</div>
+			<!--选项-->
+			<div class="xl_option animated rotateInUpRight">
+				<img src="img/go_ico2.png"/ width="100%">
+			</div>
+			<!--返回顶部-->
+			<div class="xl_BackTop">
+				<img src="img/fhdb_ico.png"/ width="100%">
+			</div>
+			<!--右侧副导航-->
+			<ul class="xl_aboutus_ul">
+				<li class="active">
+					<a href="javascript:;">组织架构</a>
+				</li>
+				<li>
+					<a href="javascript:;">团队风采</a>
+				</li>
+			</ul>
+			
+		</div>
+		
+		
+		
+		
+		<script src="js/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+	    <script src="js/sm.min.js" type="text/javascript" charset="utf-8"></script>
+	    <script src="js/sm-extend.min.js" type="text/javascript" charset="utf-8"></script>
+	    <script src="js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+	    <script src="js/swiper-3.4.1.min.js" type="text/javascript" charset="utf-8"></script>
+	    <script src="js/new_file.js" type="text/javascript" charset="utf-8"></script>
+	    <script type="text/javascript">
+	    	$(".xl_aboutus_ul li").click(function(){
+			    $(".xl_aboutus_ul li").eq($(this).index()).addClass("active").siblings().removeClass('active');
+				$(".xl_investor_body").hide().eq($(this).index()).show();
+        	});
+        	
+        	
+        	/*团队风采弹窗*/
+			$(".xl_investor_tdfc li").click(function () {
+				$(".xl_tzz_tdfc_xq1").eq($(this).index()).show();
+				$(".xl_tdfc_zhezhao").fadeIn();
+				$(".xl_tzz_tdfc_xq1").eq($(this).index()).removeClass("bounceOutDown");
+				$(".xl_tzz_tdfc_xq1").eq($(this).index()).addClass("fadeInDown");
+				$(".content,.xl_bg_kuai,.xl_option,.xl_BackTop,.xl_aboutus_ul").css({
+					"-webkit-filter":"blur(10px)",
+				})
+				$("body").bind("touchmove mousemove",function(e){e.preventDefault();}); 
+				return false;
+			})
+			$(".xl_tzz_tdfc_xq_close").click(function () {
+				$(".xl_tdfc_zhezhao").fadeOut();
+				$(this).parent(".xl_tzz_tdfc_xq1").removeClass("fadeInDown");
+				$(this).parent(".xl_tzz_tdfc_xq1").addClass("bounceOutDown");
+				$(".content,.xl_bg_kuai,.xl_option,.xl_BackTop,.xl_aboutus_ul").css({
+					"-webkit-filter":"blur(0px)",
+				})
+				$("body").unbind("touchmove mousemove"); 
+				return false;
+			})
+	    </script>
+	</body>
+</html>

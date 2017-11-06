@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <title>联系我们</title>
+	    <link rel="shortcut icon" href="/favicon.ico">
+	    <meta name="apple-mobile-web-app-capable" content="yes">
+	    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+	    <meta content="telephone=no" name="format-detection" />
+		<meta name="format-detection" content="email=no" />
+	    <link rel="stylesheet" type="text/css" href="css/reset_app.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/sm.min.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/animate.min.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/swiper-3.4.1.min.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/zoomify.min.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/new_file.css"/>
+	    <style type="text/css">
+	    	.page{background:url(img/sy_2_gb.png) no-repeat;background-size: 100% 100%;}
+	    	.xl_connect_logo{width: 100%;padding-top: 10%;text-align: center;}
+	    	.xl_connect_logo .xl_span_img_1{display: inline-block;width: 4rem;margin-bottom: 0.5rem;animation: rotation 10s linear infinite;-webkit-animation: rotation 10s linear infinite;}
+	    	.xl_connect_logo .xl_span_img_2{display: inline-block;width: 6rem;}
+	    	.xl_connact_ul{
+	    		padding: 0 10%;	
+	    	}
+			.xl_connact_ul li{
+				line-height: 1;
+				width: 100%;
+				font-size: 0.65rem;
+				color: #333333;
+				margin-bottom:3%;
+			}
+			
+			.xl_connact_ul li .xl_span_1_img{
+				width: 0.7rem;
+				display: inline-block;
+				position: relative;
+				top: -.08rem;
+				margin-right: 0.2rem;
+			}
+			
+			
+			.my-map { margin: 1rem auto; width: 100%; height: 40%;}
+			.my-map .icon { background: url(http://lbs.amap.com/console/public/show/marker.png) no-repeat; }
+			.my-map .icon-cir { height: 31px; width: 28px;}
+			.my-map .icon-cir-green { background-position: -11px -155px; }
+			.amap-container{height: 100%;}
+			
+			.xl_option{
+				bottom: 10%;
+			}
+			
+			@media screen and (max-width:330px) {
+				 .xl_connact_ul li{
+				    width: 100%;
+				  }
+				  .my-map {height: 30%; }
+				  .xl_connact_ul li{
+				  	font-size: 0.6rem;
+				  }
+			}
+	    </style>
+	</head>
+	<body>
+		<div class="page">
+			<div class="content">
+				<!--头部logo-->
+				<!--logo-->	
+				<div class="xl_connect_logo animated">
+					<span class="xl_span_img_1"><img src="img/logo_1-1.png"/ width="100%"></span><br />
+					<span class="xl_span_img_2"><img src="img/logo_2-2.png"/ width="100%"></span>
+				</div>
+				
+				<!--地图api-->
+				<div id="wrap" class="my-map  animated fadeInLeft">
+					<div id="mapContainer"></div>
+				</div>
+				<script src="http://webapi.amap.com/maps?v=1.3&key=8325164e247e15eea68b59e89200988b"></script>
+				<script>
+				!function(){
+					var infoWindow, map, level = 18,
+						center = {lng: 120.550893, lat: 31.859198},
+						features = [{type: "Marker", name: "张家港唯恩医疗美容医院有限公司", desc: "", color: "green", icon: "cir", offset: {x: -9, y: -31}, lnglat: {lng: 120.551263, lat: 31.858915}}];
+			
+					function loadFeatures(){
+						for(var feature, data, i = 0, len = features.length, j, jl, path; i < len; i++){
+							data = features[i];
+							switch(data.type){
+								case "Marker":
+									feature = new AMap.Marker({ map: map, position: new AMap.LngLat(data.lnglat.lng, data.lnglat.lat),
+										zIndex: 3, extData: data, offset: new AMap.Pixel(data.offset.x, data.offset.y), title: data.name,
+										content: '<div class="icon icon-' + data.icon + ' icon-'+ data.icon +'-' + data.color +'"></div>' });
+									break;
+								case "Polyline":
+									for(j = 0, jl = data.lnglat.length, path = []; j < jl; j++){
+										path.push(new AMap.LngLat(data.lnglat[j].lng, data.lnglat[j].lat));
+									}
+									feature = new AMap.Polyline({ map: map, path: path, extData: data, zIndex: 2,
+										strokeWeight: data.strokeWeight, strokeColor: data.strokeColor, strokeOpacity: data.strokeOpacity });
+									break;
+								case "Polygon":
+									for(j = 0, jl = data.lnglat.length, path = []; j < jl; j++){
+										path.push(new AMap.LngLat(data.lnglat[j].lng, data.lnglat[j].lat));
+									}
+									feature = new AMap.Polygon({ map: map, path: path, extData: data, zIndex: 1,
+										strokeWeight: data.strokeWeight, strokeColor: data.strokeColor, strokeOpacity: data.strokeOpacity,
+										fillColor: data.fillColor, fillOpacity: data.fillOpacity });
+									break;
+								default: feature = null;
+							}
+							if(feature){ AMap.event.addListener(feature, "click", mapFeatureClick); }
+						}
+					}
+			
+					function mapFeatureClick(e){
+						if(!infoWindow){ infoWindow = new AMap.InfoWindow({autoMove: true}); }
+						var extData = e.target.getExtData();
+						infoWindow.setContent("<h5>" + extData.name + "</h5><div>" + extData.desc + "</div>");
+						infoWindow.open(map, e.lnglat);
+					}
+			
+					map = new AMap.Map("mapContainer", {center: new AMap.LngLat(center.lng, center.lat), level: level});
+					
+					loadFeatures();	}();
+				</script>
+				
+				
+				<!--联系方式-->
+				<ul class="xl_connact_ul  animated fadeInRight">
+					<li class="xl_li_1">
+						<span class="xl_span_1_img"><img src="img/dzico.png"/ width="100%"></span>
+						<span>医院地址：江苏省张家港市杨舍镇东环路78号</span>
+					</li>
+					<li class="xl_li_2">
+						<span class="xl_span_1_img"><img src="img/sjico.png"/ width="100%"></span>
+						<span>免费热线：400-886-7568</span>
+					</li>
+					<li class="xl_li_1">
+						<span class="xl_span_1_img"><img src="img/dhico_2.png"/ width="100%"></span>
+						<span>医内电话：5012-58106669</span>
+					</li>
+					<li class="xl_li_2">
+						<span class="xl_span_1_img"><img src="img/sjico-04.png"/ width="100%"></span>
+						<span>门诊时间：08:30-17:50（无假日医院）</span>
+					</li>
+					<div class="clr"></div>
+				</ul>
+			</div>
+			
+			
+			
+			<!--弹窗导航-->
+			<div class="xl_nav">
+				<ul class="animated flipInX">
+					<li>
+						<a href="index.html">首页</a>
+					</li>
+					<li>
+						<a href="aboutUs.html">走进唯恩荟</a>
+					</li>
+					<li>
+						<a href="newsMedia.html">新闻媒体</a>
+					</li>
+					<li>
+						<a href="hr.html">人力资源</a>
+					</li>
+					<li>
+						<a href="investorRelations.html">投资者关系</a>
+					</li>
+					<li>
+						<a href="connectUs.html" style="border: 0;">联系我们</a>
+					</li>
+					<span class="xl_close"><img src="img/close_ico.png"/ width="100%"></span>
+				</ul>
+			</div>
+			<!--遮罩-->
+			<div class="xl_zhezhao">
+				
+			</div>
+			<!--选项-->
+			<div class="xl_option animated rotateInUpRight">
+				<img src="img/go_ico2.png"/ width="100%">
+			</div>
+			
+			<!--背景方块点缀-->
+			<span class="xl_bg_kuai xl_bg_kuai_1"><img src="img/bg_ico_1.png"/ width="100%"></span>
+			<span class="xl_bg_kuai xl_bg_kuai_2"><img src="img/bg_ico_1.png"/ width="100%"></span>
+			<span class="xl_bg_kuai xl_bg_kuai_3"><img src="img/bg_ico_1.png"/ width="100%"></span>
+			<span class="xl_bg_kuai xl_bg_kuai_4"><img src="img/bg_ico_1.png"/ width="100%"></span>
+		</div>
+		
+		
+		
+		<script src="js/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+	    <script src="js/sm.min.js" type="text/javascript" charset="utf-8"></script>
+	    <script src="js/sm-extend.min.js" type="text/javascript" charset="utf-8"></script>
+	    <script src="js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+	    <script src="js/swiper-3.4.1.min.js" type="text/javascript" charset="utf-8"></script>
+	    <script src="js/zoomify.min.js" type="text/javascript" charset="utf-8"></script>
+	    <script src="js/new_file.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>
