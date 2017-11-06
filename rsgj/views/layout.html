@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>{{title}}{{data.title}}</title>
+		<link href="/img/favicon.ico" rel="shortcut icon">
+		<link rel="stylesheet" type="text/css" href="/css/swiper.min.css" />
+		<link href="/css/style.css" rel="stylesheet" type="text/css">
+	</head>
+
+	<body class="wMin">
+		<!--内容-->
+		{{> content}}
+
+		<script src="/js/jquery-1.4.0.min.js"></script>
+		{{#scripts}}
+		<script src="{{.}}"></script>
+		{{/scripts}}
+		<script>
+			$(function() {
+
+				//回车搜索
+				$(".sKey").keydown(function(e) {
+					if(e.keyCode == 13) $(".sSub").click();
+				});
+				//搜索
+				$(".sSub").click(function() {
+					window.location.href = "productSearch?Key=" + $(".sKey").val();
+				});
+
+			})
+		</script>
+	</body>
+
+</html>

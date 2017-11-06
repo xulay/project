@@ -1,0 +1,115 @@
+<link href="/css/jquery.lightbox-0.5.css" rel="stylesheet">
+<style>
+	/* Code tidied up by ScrapBook */
+	
+	.bigImg {
+		background: rgb(0, 0, 0) url("/img/bg002.jpg") no-repeat scroll center top;
+		position: absolute;
+		z-index: -1;
+		left: 0px;
+		right: 0px;
+		overflow: hidden;
+		height: 298px;
+		width: 100%;
+	}
+	
+	@media screen and (min-width:767px) {
+		#lightbox-container-image-box {
+			width: 30%!important;
+			height: 30%!important;
+		}
+		#lightbox-nav-btnNext,
+		#lightbox-nav-btnPrev {
+			height: 100%!important;
+		}
+		#lightbox-container-image-data-box {
+			width: 29%!important;
+		}
+		#lightbox-container-image-box #lightbox-image {
+			width: 100%;
+		}
+	}
+</style>
+<div class="head">
+	{{> header}}
+</div>
+<div class="w mainAbout">
+	<div class="aboutImgTxt">
+		<img class="aboutImg" src="/img/20170828110046.jpg" height="290px">
+		<h2>关于我们</h2>
+		<p><span style="font-size: 16px; line-height: 24px;">中国木材产业联盟成员，总部立足张家港，辐射全球，与国外林场主及相关国外木材协会常年保持战略合作关系，一手货源，价格实惠、品种齐全、供应稳定。现公司专注于非洲材、南美材、北美材、巴新所罗门材在中国市场的开发和应用，构建全国的木材产业联盟，致力于打造木材全产业链孵化平台。</span></p>
+	</div>
+	<div class="clearfix server">
+		<h2>我们的服务</h2>
+		<p><span style="font-size: 16px; line-height: 24px;">经营模式上，整合资源，创新、变革、颠覆，切入互联网金融和互联网＋模式，建立了木材融资平台和木材交易平台，并以稀缺珍贵木材的优势在文玩领域开发及推广，引领新型消费者模式。以此来保障企业模式具有长久性和核心竞争力，成为行业的标杆品牌。</span></p>
+	</div>
+	<div class="aPoint clearfix">
+		<a href="aboutDetails/CX" class="item">
+			<h2>诚信</h2><span style="font-size: 16px;">企业生存的根本</span></a>
+		<div class="partition"></div>
+		<a href="aboutDetails/ZY" class="item">
+			<h2>专业</h2><span style="font-size: 16px;">卓越品质的保障</span></a>
+		<div class="partition"></div>
+		<a href="aboutDetails/CX2" class="item">
+			<h2>创新</h2><span style="font-size: 16px;">企业发展的动力</span></a>
+		<div class="partition"></div>
+		<a href="aboutDetails/GY" class="item">
+			<h2>共赢</h2><span style="font-size: 16px;">共同努力的目标</span></a>
+	</div>
+	<!--外国图片-->
+	<div class="Foreign-img detail">
+		<ul>
+			<li>
+				<a href="img/20170828105929.jpg" rel="lightbox[plants]"><img src="img/20170828105929.jpg" width="100%" /></a>
+			</li>
+			<li>
+				<a href="img/20170828105952.jpg" rel="lightbox[plants]"><img src="img/20170828105952.jpg" width="100%" /></a>
+			</li>
+			<li>
+				<a href="img/20170828110002.jpg" rel="lightbox[plants]"><img src="img/20170828110002.jpg" width="100%" /></a>
+			</li>
+			<li>
+				<a href="img/20170828110009.jpg" rel="lightbox[plants]"><img src="img/20170828110009.jpg" width="100%" /></a>
+			</li>
+			<li>
+				<a href="img/20170828110014.jpg" rel="lightbox[plants]"><img src="img/20170828110014.jpg" width="100%" /></a>
+			</li>
+			<li>
+				<a href="img/20170828110021.jpg" rel="lightbox[plants]"><img src="img/20170828110021.jpg" width="100%" /></a>
+			</li>
+			<li>
+				<a href="img/20170828110027.jpg" rel="lightbox[plants]"><img src="img/20170828110027.jpg" width="100%" /></a>
+			</li>
+			<li>
+				<a href="img/20170828110034.jpg" rel="lightbox[plants]"><img src="img/20170828110034.jpg" width="100%" /></a>
+			</li>
+			<li>
+				<a href="img/20170828110051.jpg" rel="lightbox[plants]"><img src="img/20170828110051.jpg" width="100%" /></a>
+			</li>
+			<li>
+				<a href="img/20170828110039.jpg" rel="lightbox[plants]"><img src="img/20170828110039.jpg" width="100%" /></a>
+			</li>
+			<li>
+				<a href="img/20170828110046.jpg" rel="lightbox[plants]"><img src="img/20170828110046.jpg" width="100%" /></a>
+			</li>
+		</ul>
+	</div>
+</div>
+
+<div class="foot">
+	{{> bottom}}
+</div>
+
+<script>
+	window.onload = function() {
+		$(".imgLink1 img,.imgLink2 img").hover(function() {
+			$(this).css("border", "10px solid #70ae14").height(90);
+		}, function() {
+			$(this).css("border", "0").height(110);
+		})
+
+		//lightBox
+		$('.detail a').lightBox();
+
+	}
+</script>

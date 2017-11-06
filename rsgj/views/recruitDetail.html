@@ -1,0 +1,35 @@
+<style>
+	.wMin {
+		background: rgb(246, 243, 243) none repeat scroll 0% 0%;
+	}
+</style>
+<div class="head">
+	{{> header}}
+</div>
+<div class="w recruit clearfix" style="margin-top: 80px;">
+	<h2 class="rczp">人才招聘</h2>
+	<div class="list" style="text-align: center;">
+		<div class="detail">
+			<div class="recruitTop">
+				<h1>会计</h1>
+				<a href="javascript:window.history.go(-1);" class="close"></a>
+			</div>
+			<div class="recruitCenter">
+				<div class="recruitTxt" style="display: none;">{{data.html}}</div>
+				<div class="detail" id="detail">
+
+				</div>
+			</div>
+			<div class="recruitBottom"></div>
+		</div>
+
+	</div>
+</div>
+<div class="foot">
+	{{> bottom}}
+</div>
+
+<script>
+	var recruitTxt = document.getElementsByClassName('recruitTxt')[0].innerText;
+	document.getElementById('detail').innerHTML = recruitTxt;
+</script>

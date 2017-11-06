@@ -1,0 +1,33 @@
+<style>
+	.wMin {
+		background: rgb(246, 243, 243) none repeat scroll 0% 0%;
+	}
+</style>
+<div class="head">
+	{{> header}}
+</div>
+<div class="w productList">
+	<div class="cap"></div>
+	<h2>常用木材图鉴</h2>
+	<div class="list clearfix">
+
+		{{#list}}
+
+		<a href="product/{{id}}" class="item" style="">
+			<img src="/img/{{img}}" width="174" height="174">
+			<div>
+				<h3>{{h3}} <em>({{h4}})</em></h3>
+				<b>{{h5}}</b><br> 木材名称：{{mcmc}}
+				<br>不规范名称：{{bgfmc}}
+			</div>
+			<span></span>
+		</a>
+
+		{{/list}}
+
+	</div>
+</div>
+
+<div class="foot">
+	{{> bottom}}
+</div>

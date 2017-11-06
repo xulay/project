@@ -1,0 +1,86 @@
+<div class="head">
+	{{> header}}
+</div>
+<div class="w">
+	<div class="contactDetail">
+		<h2>联系我们</h2>
+		<p class="contactAaddr addr1">
+			<span style="cursor: pointer;">张家港仁山国际贸易有限公司</span>
+			<br> 地址：江苏省张家港市金港镇香山北路15号205室
+			<br> 电话：0512-58300666
+			<br>
+
+		</p>
+		<div class="msg">
+			<input class="mName" value="姓名" dval="姓名" type="text">
+			<input class="mMail" value="邮件" dval="邮件" type="text">
+			<textarea class="mText" dval="信息">信息</textarea>
+			<input class="mSub" value="" type="button">
+		</div>
+		<div class="qCode1"></div>
+		<div class="qCode2"></div>
+	</div>
+	<div class="contactAddr"></div>
+</div>
+
+<div class="foot">
+	{{> bottom}}
+</div>
+
+<script>
+	window.onload = function() {
+
+		//切换地址 contact_addr2.jpg
+		$(".contactAaddr span").eq(0).click(function() {
+			$(".contactAddr").css("backgroundImage", "url(/skin/contact_addr.jpg)");
+		}).css("cursor", "pointer");
+		$(".contactAaddr span").eq(1).click(function() {
+			$(".contactAddr").css("backgroundImage", "url(/skin/contact_addr2.jpg)");
+
+		}).css("cursor", "pointer");
+
+		$("input[dVal],textarea[dVal]").focus(function() {
+			if($(this).val() == $(this).attr("dVal")) $(this).val("");
+		}).blur(function() {
+			if($(this).val() == "") $(this).val($(this).attr("dVal"));
+		});
+
+		$(".mSub").click(function() {
+			var mName = $(".mName").val();
+			var mMail = $(".mMail").val();
+			var mText = $(".mText").val();
+			if(
+				mName == "" || mName == $(".mName").attr("dVal") ||
+				mMail == "" || mMail == $(".mMail").attr("dVal") ||
+				mText == "" || mText == $(".mText").attr("dVal")
+			) {
+				alert("请填写完整后再提交！");
+				return;
+			}
+			//ajax 提交
+			$.ajax({
+				dataType: 'json',
+				url: 'msg.aspx',
+				async: false,
+				type: "POST",
+				cache: false,
+				data: {
+					name: mName,
+					mail: mMail,
+					memo: mText
+				},
+				success: function(json) {
+					if(json.suc) {
+						alert("提交成功!");
+					} else {
+						alert(json.msg);
+					}
+				},
+				error: function(data) {
+					alert("连接失败!");
+				}
+			}) //end ajax
+		});
+
+	}
+</script>

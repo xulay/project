@@ -1,0 +1,28 @@
+<div class="head">
+	{{> header}}
+</div>
+<div class="main">
+	<div class="w">
+		<div class="cap"></div>
+		<h2>{{data.h1}}</h2>
+		<p class="time">发表日期:{{data.time}}</p>
+		<div class="content">
+			<div id="infoNews">
+				<div class="hidden" style="display: none;">{{data.news}}</div>
+			</div>
+
+			<div class="cBottom clearfix">
+				<span class="source">信息来源:仁山国际贸易</span>
+
+				<a href="javascript:history.go(-1);" class="pageBack"></a>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="foot">
+	{{> bottom}}
+</div>
+<script>
+	var infoNews = document.getElementById('infoNews').getElementsByClassName('hidden')[0].innerText;
+	document.getElementById('infoNews').innerHTML = infoNews;
+</script>

@@ -1,0 +1,33 @@
+<style>
+	/* Code tidied up by ScrapBook */
+	
+	.bigImg {
+		background: rgb(0, 0, 0) url("/img/bg002.jpg") no-repeat scroll center top;
+		position: absolute;
+		z-index: -1;
+		left: 0px;
+		right: 0px;
+		overflow: hidden;
+		height: 298px;
+		width: 100%;
+	}
+</style>
+<div class="head">
+	{{> header}}
+</div>
+<div class="w aboutDetail clearfix" style="margin-top: 80px; color: rgb(255, 255, 255); font-size: 14px; position: relative;">
+	<a href="javascript:window.history.go(-1);" class="close"></a>
+	<div class="topic" style="float: left; width: 220px; background: rgba(0, 0, 0, 0) url(/img/bg004.png) no-repeat scroll center top; text-align: center; height: 180px; padding-top: 48px; line-height: 30px;">
+		<h2 style="line-height: 76px; font-size: 46px; font-weight: normal;">{{data.h2}}</h2>
+		<span style="font-size: 16px;">{{data.h3}}</span>
+	</div>
+	<div style="background: rgb(131, 199, 67) none repeat scroll 0% 0%; width: 580px; float: left; height: 68px; padding: 80px; line-height: 24px; font-size: 16px;">
+		{{data.text}}
+	</div>
+</div>
+
+<img src="/img/{{data.img}}" class="w" style="margin: 30px auto 76px; display: block;">
+
+<div class="foot">
+	{{> bottom}}
+</div>

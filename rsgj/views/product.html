@@ -1,0 +1,243 @@
+<style>
+	.wMin {
+		background: rgb(246, 243, 243) none repeat scroll 0% 0%;
+	}
+</style>
+<div class="head">
+	{{> header}}
+</div>
+<div class="w productList">
+	<div class="cap"></div>
+	<h1>{{data.title}} <span>( {{data.smallTitle}} )</span><a href="javascript:history.go(-1);">&lt;&lt;返回上一页</a></h1>
+	<div class="w content clearfix">
+		<table class="ke-zeroborder" style="color: rgb(0, 0, 0);" width="960" height="280" cellspacing="0" cellpadding="0" border="0" align="center">
+			<tbody>
+				<tr>
+					<td bgcolor="#a0cc54" align="center">
+						<table class="ke-zeroborder" width="800" cellspacing="0" cellpadding="0" border="0">
+							<tbody>
+								<tr>
+									<td width="350">
+										<img src="../img/{{data.img1}}" alt="" width="345" height="196">
+									</td>
+									<td style="line-height: 22px; padding-left: 20px;" valign="bottom">
+										<b>{{data.name}}<br>
+									&gt; 木材名称：{{data.mcmc}}&nbsp;<br>
+									&gt; 地方名称：{{data.dfmc}}<br>
+									&gt; 不规范名称：{{data.bgfmc}}<br>
+									</b>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<table class="ke-zeroborder" style="color: rgb(0, 0, 0);" width="960" height="1050" cellspacing="0" cellpadding="0" border="0" align="center">
+			<tbody>
+				<tr>
+					<td valign="top" bgcolor="#81bf26">
+						<br>
+						<table class="ke-zeroborder" width="800" cellspacing="0" cellpadding="0" border="0" align="center">
+							<tbody>
+								<tr>
+									<td colspan="2" height="30">
+										<table class="ke-zeroborder" width="100" height="18" cellspacing="0" cellpadding="0" border="0">
+											<tbody>
+												<tr>
+													<td style="background-color: rgb(0, 0, 0); color: rgb(255, 255, 255); text-align: center;">
+														树木与分布
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="2" height="60">
+										<div style="line-height: 1.5;">
+											{{data.smyfb}}
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<img src="../img/{{data.spImg}}" alt="" width="286" height="186">
+									</td>
+									<td>
+										<img src="../img/{{data.hdmImg}}" alt="" width="283" height="186">
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<br>
+						<table class="ke-zeroborder" width="800" cellspacing="0" cellpadding="0" border="0" align="center">
+							<tbody>
+								<tr>
+									<td height="30">
+										<table class="ke-zeroborder" width="100" height="18" cellspacing="0" cellpadding="0" border="0">
+											<tbody>
+												<tr>
+													<td style="background-color: rgb(0, 0, 0); color: rgb(255, 255, 255); text-align: center;">
+														树皮
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</td>
+									<td height="30">
+										<table class="ke-zeroborder" width="100" height="18" cellspacing="0" cellpadding="0" border="0">
+											<tbody>
+												<tr>
+													<td style="background-color: rgb(0, 0, 0); color: rgb(255, 255, 255); text-align: center;">
+														横断面
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td width="350">
+										<div style="line-height: 1.5; width: 300px;">
+											{{data.sp}}</div>
+									</td>
+									<td width="350">
+										<div style="line-height: 1.5; width: 300px;">
+											{{data.hdm}}</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<img src="../img/{{data.hggzImg}}" alt="" width="232" height="227">
+									</td>
+									<td>
+										<img src="../img/{{data.byImg}}" alt="" width="236" height="230">
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<br>
+						<table class="ke-zeroborder" width="800" cellspacing="0" cellpadding="0" border="0" align="center">
+							<tbody>
+								<tr>
+									<td height="30">
+										<table class="ke-zeroborder" width="100" height="18" cellspacing="0" cellpadding="0" border="0">
+											<tbody>
+												<tr>
+													<td style="background-color: rgb(0, 0, 0); color: rgb(255, 255, 255); text-align: center;">
+														宏观构造
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</td>
+									<td height="30">
+										<table class="ke-zeroborder" width="100" height="18" cellspacing="0" cellpadding="0" border="0">
+											<tbody>
+												<tr>
+													<td style="background-color: rgb(0, 0, 0); color: rgb(255, 255, 255); text-align: center;">
+														版样
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td width="350">
+										<div style="line-height: 1.5; width: 300px;">
+											{{data.hggz}}</div>
+									</td>
+									<td width="350">&nbsp;
+
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<br>
+						<table class="ke-zeroborder" width="800" cellspacing="0" cellpadding="0" border="0" align="center">
+							<tbody>
+								<tr>
+									<td height="30">
+										<table class="ke-zeroborder" width="100" height="18" cellspacing="0" cellpadding="0" border="0">
+											<tbody>
+												<tr>
+													<td style="background-color: rgb(0, 0, 0); color: rgb(255, 255, 255); text-align: center;">
+														木材材性
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td height="60">
+										<div style="line-height: 1.5;">
+											{{data.mctx}}</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<br>
+						<table class="ke-zeroborder" width="800" cellspacing="0" cellpadding="0" border="0" align="center">
+							<tbody>
+								<tr>
+									<td height="30">
+										<table class="ke-zeroborder" width="100" height="18" cellspacing="0" cellpadding="0" border="0">
+											<tbody>
+												<tr>
+													<td style="background-color: rgb(0, 0, 0); color: rgb(255, 255, 255); text-align: center;">
+														木材用途
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td height="60">
+										<div style="line-height: 1.5;">
+											{{data.mcyt}}</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<br>
+						<table class="ke-zeroborder" width="800" cellspacing="0" cellpadding="0" border="0" align="center">
+							<tbody>
+								<tr>
+									<td height="30">
+										<table class="ke-zeroborder" width="100" height="18" cellspacing="0" cellpadding="0" border="0">
+											<tbody>
+												<tr>
+													<td style="background-color: rgb(0, 0, 0); color: rgb(255, 255, 255); text-align: center;">
+														识别要点
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td height="60">
+										<div style="line-height: 1.5;">
+											{{data.sbyd}}</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<p>&nbsp;
+
+						</p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+
+<div class="foot">
+	{{> bottom}}
+</div>

@@ -1,0 +1,58 @@
+<!--头部-->
+<div class="head2">
+	{{> header}}
+</div>
+<div class="slideBox">
+	<!--修改后的轮播图-->
+	<div class="swiper-container bd">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide"><img src="img/banner1.jpg" /></div>
+			<div class="swiper-slide"><img src="img/banner2.jpg" /></div>
+		</div>
+	</div>
+</div>
+<div class="bodyInd2">
+	<div class="imgLink1">
+		<a href="about"><img class="hb" src="img/img001.jpg" width="340" height="140"><span style="font-size: 16px;">公司简介</span></a>
+		<a href="productList"><img class="hb" src="img/img002.jpg" width="340" height="140"><span style="font-size: 16px;">产品介绍</span></a>
+		<a href="appCaseYSP"><img class="hb" src="img/img003.jpg" width="340" height="140"><span style="font-size: 16px;">应用案例</span></a>
+	</div>
+	<div class="imgLink2">
+		<a href="infoList"><img class="hb" src="img/img004.jpg" width="340" height="140"><span style="font-size: 16px;">木业知识</span></a>
+		<a href="recruit"><img class="hb" src="img/img005.jpg" width="340" height="140"><span style="font-size: 16px;">人才招聘</span></a>
+		<a href="contact"><img class="hb" src="img/img006.jpg" width="340" height="140"><span style="font-size: 16px;">联系我们</span></a>
+	</div>
+	<div class="logo"><img src="img/logo-rs.png" width="100" height="100"></div>
+	<!--<div class="qCodeWxWb"></div>-->
+</div>
+<br>
+<div class="foot2">
+	{{> bottom}}
+</div>
+
+<!--<script src="js/jquery.SuperSlide.2.1.1.js"></script>-->
+<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+<script>
+	window.onload = function() {
+		//修改鼠标移入移除
+		$(".imgLink1 img,.imgLink2 img").hover(function() {
+			if($(window).width() > 767) {
+				$(this).css("border", "10px solid #ADEB51").height(120).width(320).removeClass("hb"); // #70ae14
+			}
+		}, function() {
+			if($(window).width() > 767) {
+				$(this).css("border", "0").height(140).width(340).addClass("hb");
+			}
+		})
+
+		//修改后的轮播图
+		var mySwiper = new Swiper('.swiper-container.bd', {
+			loop: true,
+			autoplay: 3000,
+			paginationClickable: true,
+			autoplayDisableOnInteraction: false,
+		})
+	}
+	/*
+	 */
+</script>

@@ -1,0 +1,47 @@
+<link href="/css/jquery.lightbox-0.5.css" rel="stylesheet">
+<style>
+	/* Code tidied up by ScrapBook */
+	
+	body {
+		background: rgb(45, 41, 43) none repeat scroll 0% 0%;
+	}
+</style>
+<div class="head">
+	{{> header}}
+</div>
+<div class="w appCase">
+	{{> appCaseNav}}
+	<div class="detail clearfix">
+
+		<a href="/img/{{data.img1}}" rel="lightbox[plants]"><img class="  hb" src="/img/{{data.img1}}" width="314"></a>
+
+		<a href="/img/{{data.img2}}" rel="lightbox[plants]"><img class="  hb" src="/img/{{data.img2}}" width="314"></a>
+
+		<a href="/img/{{data.img3}}" rel="lightbox[plants]"><img class="  hb" src="/img/{{data.img3}}" width="314"></a>
+
+		<a href="/img/{{data.img4}}" rel="lightbox[plants]"><img class="hb" src="/img/{{data.img4}}" width="314"></a>
+
+		<a href="/img/{{data.img5}}" rel="lightbox[plants]"><img class="  hb" src="/img/{{data.img5}}" width="314"></a>
+
+		<a href="/img/{{data.img6}}" rel="lightbox[plants]"><img class="  hb" src="/img/{{data.img6}}" width="314"></a>
+
+	</div>
+</div>
+
+<div class="foot">
+	{{> bottom}}
+</div>
+
+<script>
+	window.onload = function() {
+		$(".detail img").hover(function() {
+			$(this).removeClass('hb');
+		}, function() {
+			$(this).addClass('hb');
+		})
+
+		//lightBox
+		$('.detail a').lightBox();
+		$('#appNav .item').eq(appNavId).addClass('on');
+	}
+</script>

@@ -1,0 +1,84 @@
+<style>
+	.wMin {
+		background: rgb(246, 243, 243) none repeat scroll 0% 0%;
+	}
+</style>
+<div class="head">
+	{{> header}}
+</div>
+<div class="w recruit clearfix" style="margin-top: 80px;">
+	<h2 class="rczp">人才招聘</h2>
+	<div class="list" style="text-align: center;">
+		<a href="javascript:;" class="prev" style="display: none;">&nbsp;</a>
+		<a href="javascript:;" class="next" style="display: none;">&nbsp;</a>
+
+		<!--<a class="item" href="recruitDetail/1">-->
+			<!--<h2>会计</h2>-->
+			<!--<pre>年薪：面议<br />人数：1<br />有效期：长期<br />职业要求：请点击</pre>-->
+		<!--</a>-->
+
+		<!--<a class="item" href="recruitDetail/2">-->
+			<!--<h2>出纳</h2>-->
+			<!--<pre>年薪：面议<br />人数：1<br />有效期：长期<br />职业要求：请点击</pre>-->
+		<!--</a>-->
+
+	</div>
+</div>
+
+<div class="foot">
+	{{> bottom}}
+</div>
+
+<script>
+	var on = 0;
+
+	function show(ind) {
+		$("a.item").each(function(i) {
+			if((i >= ind) && (i < ind + 3)) {
+				$(this).show();
+			} else {
+				$(this).hide();
+			}
+
+		})
+		if(ind == 0) $(".prev").hide();
+		else $(".prev").show();
+
+		var count = $("a.item").length;
+		if(ind + 3 >= count)
+			$(".next").hide();
+		else
+			$(".next").show();
+	}
+
+	function move(next) {
+		var count = $("a.item").length;
+		if(next) on += 3;
+		else on -= 3;
+		if(on > count) {
+			on -= 3;
+
+		} else {
+
+		}
+		if(on < 0) {
+			on += 3;
+
+		} else {
+
+		}
+		show(on);
+	}
+
+	window.onload = function() {
+
+		$(".prev").click(function() {
+			move(false);
+		})
+		$(".next").click(function() {
+			move(true);
+		})
+		move(false);
+
+	}
+</script>
