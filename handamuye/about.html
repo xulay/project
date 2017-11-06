@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>关于我们</title>
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+		<style>
+			/* Code tidied up by ScrapBook */
+			
+			.bigImg {
+				background: rgb(0, 0, 0) url("img/bg002.jpg") no-repeat scroll center top;
+				position: absolute;
+				z-index: -1;
+				left: 0px;
+				right: 0px;
+				overflow: hidden;
+				height: 298px;
+				width: 100%;
+			}
+		</style>
+	</head>
+
+	<body class="wMin">
+		<div class="bigImg"></div>
+		<div class="head">
+			<div class="logoMenu">
+				<a class="logo" href="index.html"></a>
+				<div class="menu">
+					<a href="about.html">公司简介</a>
+					<a href="productList.html">产品简介</a>
+					<a href="appCaseYSP.html">应用案例</a>
+					<a href="infoList.html">木业知识</a>
+					<a href="recruit.html">人才招聘</a>
+					<a href="contact.html">联系我们</a>
+				</div>
+				<div class="search">
+					<input class="sSub" value="" type="button">
+					<input class="sKey" value="" type="text">
+				</div>
+				<div class="language"><span style="color: rgb(108, 193, 39);">CN</span> |
+					<a href="javascript:;">EN</a>
+				</div>
+				<div class="url" onclick="">非 洲 材 /
+					<a href="javascript:;" class="url2">美 洲 材</a>
+				</div>
+			</div>
+		</div>
+		<div class="w mainAbout">
+			<div class="aboutImgTxt">
+				<img class="aboutImg" src="img/imgAbout.jpg" height="290px">
+				<h2>关于我们</h2>
+				<p><span style="font-size: 16px; line-height: 24px;">中国木材产业联盟成员，总部立足张家港，辐射全球，与国外林场主及相关国外木材协会常年保持战略合作关系，一手货源，价格实惠、品种齐全、供应稳定。现公司专注于非洲材、南美材、北美材、巴新所罗门材在中国市场的开发和应用，构建全国的木材产业联盟，致力于打造木材全产业链孵化平台。</span></p>
+			</div>
+			<div class="clearfix server">
+				<h2>我们的服务</h2>
+				<p><span style="font-size: 16px; line-height: 24px;">经营模式上，整合资源，创新、变革、颠覆，切入互联网金融和互联网＋模式，建立了木材融资平台和木材交易平台，并以稀缺珍贵木材的优势在文玩领域开发及推广，引领新型消费者模式。以此来保障企业模式具有长久性和核心竞争力，成为行业的标杆品牌。</span></p>
+			</div>
+			<div class="aPoint clearfix">
+				<a href="aboutCX.html" class="item">
+					<h2>诚信</h2><span style="font-size: 16px;">企业生存的根本</span></a>
+				<div class="partition"></div>
+				<a href="javascript:;" class="item">
+					<h2>专业</h2><span style="font-size: 16px;">卓越品质的保障</span></a>
+				<div class="partition"></div>
+				<a href="javascript:;" class="item">
+					<h2>创新</h2><span style="font-size: 16px;">企业发展的动力</span></a>
+				<div class="partition"></div>
+				<a href="javascript:;" class="item">
+					<h2>共赢</h2><span style="font-size: 16px;">共同努力的目标</span></a>
+			</div>
+		</div>
+
+		<div class="foot">
+			上海瀚达木业有限公司 版权所有 &nbsp;&nbsp;&nbsp;&nbsp; 备案号：苏ICP备07505667号
+		</div>
+
+		<script src="js/jquery-1.4.0.min.js"></script>
+		<script>
+			$(function() {
+				$(".imgLink1 img,.imgLink2 img").hover(function() {
+					$(this).css("border", "10px solid #70ae14").height(90);
+				}, function() {
+					$(this).css("border", "0").height(110);
+				})
+
+				//回车搜索
+				$(".sKey").keydown(function(e) {
+					if(e.keyCode == 13) $(".sSub").click();
+				});
+				//搜索
+				$(".sSub").click(function() {
+					window.location.href = "productSearch.html?Key=" + $(".sKey").val();
+				});
+
+			})
+		</script>
+
+	</body>
+
+</html>

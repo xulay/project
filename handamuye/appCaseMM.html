@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>应用案例-木门</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/jquery.lightbox-0.5.css" rel="stylesheet">
+    <style>
+/* Code tidied up by ScrapBook */
+body { background: rgb(45, 41, 43) none repeat scroll 0% 0%; }
+</style>
+</head>
+<body class="wMin">
+	<div class="bigImg"></div>
+	<div class="head">
+        <div class="logoMenu">
+            <a class="logo" href="index.html"></a>
+            <div class="menu">
+                <a href="about.html">公司简介</a>
+                <a href="productList.html">产品简介</a>
+                <a href="appCaseYSP.html">应用案例</a>
+                <a href="infoList.html">木业知识</a>
+                <a href="recruit.html">人才招聘</a>
+                <a href="contact.html">联系我们</a>
+            </div>
+            <div class="search">
+                <input class="sSub" value="" type="button">
+                <input class="sKey" value="" type="text">
+            </div>
+            <div class="language"><span style="color: rgb(108, 193, 39);">CN</span> | <a href="javascript:;">EN</a></div>
+            <div class="url" onclick="">非 洲 材 / <a href="javascript:;" class="url2">美 洲 材</a></div>
+        </div>
+	</div>
+
+    <div class="w appCase">
+        <div class="cap"></div>
+        <div class="about">瀚达木业主营品种已达到30余种，贡献于木材行业的地板、家具、<br>实木门、工艺雕刻、人造板、建筑装饰用材等多个领域，并创造了巨大的社会和经济价值。</div>
+        <div class="class">
+            <a class="item" href="appCaseYSP.html">艺术品</a>
+            <a class="item" href="appCaseDB.html">地板</a>
+            <a class="item" href="appCaseLT.html">楼梯</a>
+            <a class="item on" href="appCaseMM.html">木门</a>
+            <a class="item" href="appCaseJJ.html">家具</a>
+        </div>
+        <div class="detail clearfix">
+            
+            <a href="img/3331.jpg" rel="lightbox[plants]"><img class="hb" src="img/3331.jpg" width="314"></a>
+            
+            <a href="img/3332.jpg" rel="lightbox[plants]"><img class="hb" src="img/3332.jpg" width="314"></a>
+            
+            <a href="img/3333.jpg" rel="lightbox[plants]"><img class="hb" src="img/3333.jpg" width="314"></a>
+            
+            <a href="img/3334.jpg" rel="lightbox[plants]"><img class="hb" src="img/3334.jpg" width="314"></a>
+            
+            <a href="img/3335.jpg" rel="lightbox[plants]"><img class="hb" src="img/3335.jpg" width="314"></a>
+            
+            <a href="img/3336.jpg" rel="lightbox[plants]"><img class="hb" src="img/3336.jpg" width="314"></a>
+            
+            
+        </div>
+    </div>
+
+	<div class="foot">
+		上海瀚达木业有限公司 版权所有 &nbsp;&nbsp;&nbsp;&nbsp; 备案号：苏ICP备07505667号
+	</div>
+	
+	
+
+
+
+<script src="js/jquery-1.4.0.min.js"></script>
+<script src="js/jquery.lightbox-0.5.min.js"></script>
+<script>
+    $(function () {
+        $(".detail img").hover(function () {
+            $(this).removeClass('hb');
+        }, function () {
+            $(this).addClass('hb');
+        })
+
+        //回车搜索
+        $(".sKey").keydown(function (e) {
+            if (e.keyCode == 13) $(".sSub").click();
+        });
+        //搜索
+        $(".sSub").click(function () {
+            window.location.href = "productSearch.html?Key=" + $(".sKey").val();
+        });
+        //lightBox
+        $('.detail a').lightBox();
+    })
+</script>
+
+</body>
+</html>

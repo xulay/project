@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>招聘</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body class="wMin" style="background: rgb(246, 243, 243) none repeat scroll 0% 0%;">
+	<div class="bigImg"></div>
+	<div class="head">
+        <div class="logoMenu">
+            <a class="logo" href="index.html"></a>
+            <div class="menu">
+                <a href="about.html">公司简介</a>
+                <a href="productList.html">产品简介</a>
+                <a href="appCaseYSP.html">应用案例</a>
+                <a href="infoList.html">木业知识</a>
+                <a href="recruit.html">人才招聘</a>
+                <a href="contact.html">联系我们</a>
+            </div>
+            <div class="search">
+                <input class="sSub" value="" type="button">
+                <input class="sKey" value="" type="text">
+            </div>
+            <div class="language"><span style="color: rgb(108, 193, 39);">CN</span> | <a href="javascript:;">EN</a></div>
+            <div class="url" onclick="">非 洲 材 / <a href="javascript:;" class="url2">美 洲 材</a></div>
+        </div>
+	</div>
+	<div class="w recruit clearfix" style="margin-top: 80px;">
+    	<img src="img/recruit.png" style="margin: 0px auto; display: block;" width="838" height="130">
+        <div class="list" style="text-align: center;">
+            <a href="javascript:;" class="prev" style="display: none;">&nbsp;</a>
+            <a href="javascript:;" class="next" style="display: none;">&nbsp;</a>
+
+<a class="item" href="recruitDetail.html?id=10">
+<h2>会计</h2>
+<pre>年薪：面议
+人数：1
+有效期：长期
+职业要求：请点击
+</pre>
+</a>            
+            
+        
+<a class="item" href="javascript:;">
+<h2>出纳</h2>
+<pre>年薪：面议
+人数：1
+有效期：长期
+职业要求：请点击
+</pre>
+</a>            
+            
+        
+
+
+          
+            
+        </div>
+    </div>
+    
+	<div class="foot">
+		上海瀚达木业有限公司 版权所有 &nbsp;&nbsp;&nbsp;&nbsp; 备案号：苏ICP备07505667号
+	</div>
+	
+	
+
+
+
+<script src="js/jquery-1.4.0.min.js"></script>
+<script>
+
+    var on = 0;
+    function show(ind) {
+        $("a.item").each(function (i) {
+            if ((i >= ind) && (i < ind + 3)) {
+                $(this).show();
+            } else {
+                $(this).hide();
+            }
+   
+        })
+        if (ind == 0) $(".prev").hide();
+        else $(".prev").show();
+
+        var count = $("a.item").length;
+        if (ind+3 >=  count)
+            $(".next").hide();
+        else
+            $(".next").show();
+    }
+    function move(next) {
+        var count=$("a.item").length;
+        if (next) on += 3;
+        else on -= 3;
+        if (on > count) {
+            on -= 3;
+          
+        } else {
+           
+        }
+        if (on < 0) {
+            on += 3;
+            
+        } else {
+           
+        }
+        show(on);
+    }
+
+
+    $(function () {
+
+        $(".prev").click(function () {
+            move(false);
+        })
+        $(".next").click(function () {
+            move(true);
+        })
+        move(false);
+
+
+
+    })
+</script>
+<script>
+    $(function () {
+
+        //回车搜索
+        $(".sKey").keydown(function (e) {
+            if (e.keyCode == 13) $(".sSub").click();
+        });
+        //搜索
+        $(".sSub").click(function () {
+            window.location.href = "productSearch.html?Key=" + $(".sKey").val();
+        });
+
+    })
+</script>
+
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>联系我们</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body class="wMin">
+	<div class="bigImg"></div>
+	<div class="head">
+        <div class="logoMenu">
+            <a class="logo" href="index.html"></a>
+            <div class="menu">
+                <a href="about.html">公司简介</a>
+                <a href="productList.html">产品简介</a>
+                <a href="appCaseYSP.html">应用案例</a>
+                <a href="infoList.html">木业知识</a>
+                <a href="recruit.html">人才招聘</a>
+                <a href="contact.html">联系我们</a>
+            </div>
+            <div class="search">
+                <input class="sSub" value="" type="button">
+                <input class="sKey" value="" type="text">
+            </div>
+            <div class="language"><span style="color: rgb(108, 193, 39);">CN</span> | <a href="javascript:;">EN</a></div>
+            <div class="url" onclick="">非 洲 材 / <a href="javascript:;" class="url2">美 洲 材</a></div>
+        </div>
+	</div>
+    
+    <div class="w">
+		<div class="contactDetail">
+        	<h2>联系我们</h2>
+            <p class="contactAaddr addr1">
+                                <span style="cursor: pointer;">上海瀚达木业有限公司</span><br>
+                地址：上海市嘉定区谢春路999号（201804）<br>
+                电话：021-69580666<br>
+                传真：021-69580999<br>
+                邮件：hoist@shhoist.com<br>
+                网址：www.shhoist.com<br>
+                
+            </p>
+            <p class="contactAaddr addr2">
+                                <span style="cursor: pointer;">江苏省张家港办事处</span><br>
+                地址：张家港市金港镇金三角大酒店1号楼418室（215633）<br>
+                电话：0512-58319074<br>
+                传真：0512-58933622<br>
+                邮件：hoist@shhoist.com<br>
+                
+            </p>
+            <div class="msg">
+                <input class="mName" value="姓名" dval="姓名" type="text">
+                <input class="mMail" value="邮件" dval="邮件" type="text">
+                <textarea class="mText" dval="信息">信息</textarea>
+                <input class="mSub" value="" type="button">
+            </div>
+            <div class="qCode1"></div>
+            <div class="qCode2"></div>
+        </div>
+		<div class="contactAddr"></div>
+	</div>
+
+	<div class="foot">
+		上海瀚达木业有限公司 版权所有 &nbsp;&nbsp;&nbsp;&nbsp; 备案号：苏ICP备07505667号
+	</div>
+	
+	
+
+
+
+<script src="js/jquery-1.4.0.min.js"></script>
+<script>
+    $(function () {
+
+        //切换地址 contact_addr2.jpg
+        $(".contactAaddr span").eq(0).click(function () {
+            $(".contactAddr").css("backgroundImage", "url(/skin/contact_addr.jpg)");
+        }).css("cursor", "pointer");
+        $(".contactAaddr span").eq(1).click(function () {
+            $(".contactAddr").css("backgroundImage", "url(/skin/contact_addr2.jpg)");
+            
+        }).css("cursor", "pointer");
+        
+
+        //回车搜索
+        $(".sKey").keydown(function (e) {
+            if (e.keyCode == 13) $(".sSub").click();
+        });
+        //搜索
+        $(".sSub").click(function () {
+            window.location.href = "productSearch.html?Key=" + $(".sKey").val();
+        });
+
+
+        $("input[dVal],textarea[dVal]").focus(function () {
+            if ($(this).val() == $(this).attr("dVal")) $(this).val("");
+        }).blur(function () {
+            if ($(this).val() == "") $(this).val($(this).attr("dVal"));
+        });
+
+        $(".mSub").click(function () {
+            var mName = $(".mName").val();
+            var mMail = $(".mMail").val();
+            var mText = $(".mText").val();
+            if (
+				mName == "" || mName == $(".mName").attr("dVal") ||
+				mMail == "" || mMail == $(".mMail").attr("dVal") ||
+				mText == "" || mText == $(".mText").attr("dVal")
+			) {
+                alert("请填写完整后再提交！");
+                return;
+            }
+            //ajax 提交
+            $.ajax({
+                dataType: 'json',
+                url: 'msg.aspx',
+                async: false,
+                type: "POST",
+                cache: false,
+                data: {
+                    name: mName, mail: mMail, memo: mText
+                },
+                success: function (json) {
+                    if (json.suc) {
+                        alert("提交成功!");
+                    } else {
+                        alert(json.msg);
+                    }
+                },
+                error: function (data) {
+                    alert("连接失败!");
+                }
+            })//end ajax
+        });
+
+    })
+</script>
+
+</body>
+</html>
