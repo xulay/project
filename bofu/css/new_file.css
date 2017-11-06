@@ -1,0 +1,1094 @@
+body{
+	font-size: 14px;
+	min-height: 600px;
+	min-width: 1300px;
+}
+a{
+	font-size: 14px;
+}
+/*头部信息*/
+.xl_hearder{
+	width: 100%;
+	height: 30px;
+	background-color: #1e1f2d;
+}
+.xl_hearder_child{
+	width: 1200px;
+	height: 100%;
+	margin: 0 auto;
+	line-height: 30px;
+	color: #64667e;
+}
+.xl_hearder_child a{
+	color: #64667e;
+}
+.xl_hearder_child a:hover{
+	color: #58b9eb;
+}
+.xl_hearder_child .FR li{
+	float: left;
+	margin-left: 30px;
+}
+.xl_hearder_child .xl_span_img{
+	margin-right: 10px;
+	position: relative;
+	top: -1px;
+}
+.xl_hearder_child .xl_span_img_hover{
+	margin-right: 10px;
+	position: relative;
+	top: -1px;
+	display: none;
+}
+.xl_hearder_child ul li:hover .xl_span_img{
+	display: none;
+}
+.xl_hearder_child ul li:hover .xl_span_img_hover{
+	display: inline-block;
+}
+.xl_hearder_child ul li:hover{
+	color: #58b9eb;
+	cursor: pointer;
+}
+/*Logo及导航*/
+.xl_nav{
+	width: 100%;
+	height: 90px;
+	background-color: #fff;
+}
+.xl_nav_child{
+	width: 1200px;
+	height: 100%;
+	margin: 0 auto;
+}
+.xl_logo{
+	line-height: 90px;
+}
+.xl_nav_child .xl_navbody .xl_navul li{
+	float: left;
+	position: relative;
+}
+.xl_nav_child .xl_navbody .xl_navul li .xl_a_1{
+	display: inline-block;
+	line-height: 90px;
+	font-size: 20px;
+	color: #1e1f2d;
+	padding: 0 35px;
+}
+.xl_nav_child .xl_navbody .xl_navul .active{
+}
+.xl_nav_child .xl_navbody .xl_navul .active .xl_a_1{
+	color: #ffffff;
+	background-color: #58b9eb;
+}
+.xl_nav_child .xl_navbody .xl_navul li .xl_navul_fu{
+	width: 100%;
+	background-color: #58b9eb;
+	position: absolute;
+	top: 90px;
+	left: 0px;
+	display: none;
+	z-index: 2;
+}
+.xl_nav_child .xl_navbody .xl_navul li .xl_navul_fu table{
+	width: 100%;
+}
+.xl_nav_child .xl_navbody .xl_navul li .xl_navul_fu tr{
+	width: 100%;
+	height: 50px;
+	/*line-height: 50px;*/
+	text-align: center;
+}
+.xl_nav_child .xl_navbody .xl_navul li .xl_navul_fu tr :hover{
+	background-color:  #1e1f2d;
+}
+.xl_nav_child .xl_navbody .xl_navul li .xl_navul_fu a{
+	width: 90%;
+	display: inline-block;
+	color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*广告*/
+.xl_banner{
+	width: 100%;
+	height: 410px;
+	background: url(../img/banner1.jpg) center center no-repeat;
+	background-size: cover;
+	position: relative;
+}
+.xl_banner .xl_span_img{
+	position: absolute;
+	right: 14%;
+	bottom: 48px;
+}
+
+
+/*公司简介*/
+.xl_index_h2{
+	width: 235px;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 70px;
+}
+.xl_index_h2 .xl_span_txt{
+	display: inline-block;
+}
+.xl_index_h2 .xl_span_txt .xl_span_1{
+	color: #000;
+	font-size: 26px;
+}
+.xl_index_h2 .xl_span_txt .xl_span_2{
+	color: #e4e4e4;
+	font-size: 16px;
+	font-weight: bold;
+	position: relative;
+	top: -5px;
+}
+.xl_index_h2 .FL,.xl_index_h2 .FR{
+	line-height: 55px;
+}
+.xl_index_companyDynamic{
+	width: 100%;
+	background-color: #f5f4f9;
+}
+.xl_index_companyDynamic_body{
+	width: 1200px;
+	margin: 0 auto;
+	position: relative;
+	margin-top: 13px;
+}
+.xl_index_companyDynamic_body .xl_span_img{
+	position: absolute;
+	top: -50px;
+	left: -50px;
+}
+.xl_index_companyDynamic .FR{
+	width: 860px;
+	border: 2px solid #ffffff;
+	margin: 40px 0;
+	padding: 22px 28px 25px 25px;
+	font-size: 16px;
+}
+.xl_index_companyDynamic .FR .xl_p_1{
+	line-height: 30px;
+}
+.xl_index_companyDynamic .FR p .xl_span_1{
+	color: #58b9eb;
+	font-weight: bold;
+	margin-right: 5px;
+}
+.xl_index_companyDynamic .FR p .xl_span_2{
+	color: #000000;
+	font-weight: bold;
+	margin-right: 5px;
+}
+.xl_index_companyDynamic_jt{
+	width: 33px;
+	height: 60px;
+	background-color: #58b9eb;
+	position: absolute;
+	top: 50%;
+	margin-top: -30px;
+	right: 1px;
+	text-align: center;
+}
+.xl_index_companyDynamic_jt span{
+	line-height: 55px;
+	margin-left: 5px;
+}
+/*产品*/
+.xl_index_products{
+	width: 100%;
+}
+.xl_index_products_body{
+	width: 1200px;
+	margin: 0 auto;
+	margin-top: 58px;
+}
+.xl_index_products_body li{
+	float: left;
+	width: 350px;
+	padding: 23px;
+	border: 2px solid #efefef;
+	height: 574px;
+	position: relative;
+	border-left: 0;
+	margin-bottom: 30px;
+}
+.xl_index_products_body .xl_span_img,.xl_index_products_body .xl_span_img img{
+	display: inline-block;
+	width: 350px;
+	height: 230px;
+}
+.xl_index_products_body .xl_span_1{
+	display: inline-block;
+	width: 100%;
+	height: 35px;
+	text-align: center;
+	background-color: #f5f4f9;
+	line-height: 35px;
+	font-size: 16px;
+	font-weight: bold;
+	margin: 25px 0;
+}
+.xl_index_products_body .xl_p_1{
+	font-size: 14px;
+	line-height: 23px;
+	height: 230px;
+	overflow: auto;
+}
+.xl_index_products_body .xl_span_img_2{
+	width: 60px;
+	height: 60px;
+	background-color: #58b9eb;
+	text-align: center;
+	position: absolute;
+	bottom: -30px;
+	left: 50%;
+	margin-left: -30px;
+}
+.xl_index_products_body .xl_span_img_2 span{
+	line-height: 60px;
+}
+
+
+/*专利技术*/
+.xl_index_zhuanli{
+	width: 100%;
+	margin-top: 30px;
+}
+.xl_index_zhuanli_body{
+	width: 1200px;
+	margin:  0 auto;
+}
+.xl_index_zhuanli_body li{
+	float: left;
+	height: 270px;
+	width: 285px;
+	margin-left: 20px;
+}
+.xl_index_zhuanli_body li .xl_span_1{
+	height: 70px;
+	width: 100%;
+	line-height: 70px;
+	font-size: 16px;
+	color: #010101;
+	font-weight: bold;
+	text-indent: 20px;
+}
+.xl_index_zhuanli_body li:hover{
+	background-color: #f5f4f9;
+}
+
+/*联系我们*/
+.xl_index_contactUs{
+	width: 100%;
+	margin-top: 45px;
+}
+.xl_index_contactUs_body{
+	width: 1200px;
+	margin: 0 auto;
+	background-color: #f5f4f9;
+}
+
+
+
+
+.xl_index_dt{
+	margin-top: 70px;
+	margin-left: 90px;
+	margin-bottom: 90px;
+}
+.xl_index_contactUs_body .xl_span_2{
+	color: #1e1f2d;
+	font-size: 14px;
+	line-height: 31px;
+	width: 282px;
+	margin-top: 83px;
+	margin-left: 77px;
+	margin-right: 70px;
+}
+.xl_index_contactUs_body .xl_span_3{
+	width: 282px;
+	color: #1e1f2d;
+	font-size: 14px;
+	margin-top: 83px;
+}
+.xl_index_contactUs_body .xl_span_3 li{
+	width: 100%;
+	margin-bottom: 22px;
+}
+.xl_index_contactUs_body .xl_span_3 li input{
+	border: 0 ;
+	background:0;
+	width: 100%;
+	border-bottom: 1px solid #000;
+	text-indent: 20px;
+	font-size: 12px;
+}
+.xl_index_contactUs_body .xl_span_3 li textarea{
+	width: 262px;
+	background:0;
+	height: 45px;
+	border: 0 ;
+	border-bottom: 1px solid #000;
+	padding-left: 20px;
+	resize: none;
+}
+.xl_tj_btn{
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	background-color: #1e1f2d;
+	color: #fff;
+	border: 0;
+	position: relative;
+	top: -20px;
+}
+
+/*底部信息*/
+.xl_index_footer{
+	width: 100%;
+	background-color: #1e1f2d;
+}
+.xl_index_footer_body{
+	width: 1200px;
+	margin: 0 auto;
+	color: #fff;
+	text-align: center;
+}
+.xl_index_footer_body a{
+	color: #fff;
+}
+.xl_index_footer_body .xl_li_1{
+	font-size: 14px;
+	margin-bottom: 8px;
+	padding: 0 51px;
+}
+.xl_index_footer_body ul{
+	display: inline-block;
+	margin-top: 30px;
+	padding-bottom: 32px;
+	vertical-align: top;
+}
+.xl_index_footer_body li{
+	line-height: 28px;
+	text-align: center;
+}
+.xl_index_footer_body li a{
+	font-size: 12px;
+}
+.xl_index_footer_body li a:hover{
+	color: #58b9eb;
+}
+
+
+/*版权信息*/
+.xl_copyright{
+	width: 100%;
+	background-color: #1e1f2d;
+}
+.xl_copyright_body{
+	border-top: 1px solid #0e0e17;
+	width: 1200px;
+	margin: 0 auto;
+	line-height: 22px;
+	padding: 10px 0;
+}
+.xl_copyright_body p{
+	text-align: center;
+	color: #64667e;
+	font-size: 12px;
+}
+.xl_copyright_body a{
+	color: #64667e;
+	font-size: 12px;
+}
+.xl_copyright_body .xl_span_1:hover{
+	color: #58b9eb;
+}
+.xl_copyright_body .xl_span_img{
+	margin-left: 8px;
+}
+
+
+/*公司动态页面代码*/
+.xl_companyDynamic_banner{
+	width: 100%;
+	height: 410px;
+	background: url(../img/companyDynamic_banner.jpg) center center no-repeat;
+	background-size: cover;
+}
+.xl_companyDynamic_h2{
+	width: 100%;
+	height: 45px;
+	margin-top: 25px;
+}
+.xl_companyDynamic_h2_body{
+	width: 1200px;
+	margin: 0 auto;
+	line-height: 45px;
+	color: #154e91;
+	font-size: 16px;
+	font-weight: bold;
+}
+.xl_companyDynamic_h2_body a{
+	color: #154e91;
+	font-size: 16px;
+	font-weight: bold;
+}
+.xl_companyDynamic_h2_body a:hover{
+	color: #58B9EB;
+}
+.xl_companyDynamic_body{
+	width: 100%;
+}
+.xl_companyDynamic_ul_parent{
+	width: 100%;
+	/*height: 1668px;*/
+	overflow: hidden;
+}
+.xl_companyDynamic_ul_parent ul{
+	display: none;
+}
+.xl_companyDynamic_body .xl_companyDynamic_ul_parent .xl_ul_1 li{
+	padding: 35px 0;
+	height: 208px;
+}
+.xl_companyDynamic_body .xl_companyDynamic_ul_parent .xl_ul_1 li:hover{
+	background-color: #f9f8fb;
+}
+.xl_companyDynamic_body .xl_companyDynamic_ul_parent .xl_ul_1 li .xl_companyDynamic_body_li_child{
+	width: 1200px;
+	margin: 0 auto;
+}
+.xl_companyDynamic_body .xl_companyDynamic_ul_parent .xl_ul_1 li .xl_companyDynamic_body_li_child .FR{
+	width: 855px;
+}
+.xl_companyDynamic_body .xl_companyDynamic_ul_parent .xl_ul_1 li .FL{
+	width: 300px;
+	height: 208px;
+	cursor: pointer;
+}
+.xl_companyDynamic_body .xl_companyDynamic_ul_parent .xl_ul_1 li .FL img{
+	width: 300px;
+	height: 208px;
+}
+.xl_companyDynamic_body .xl_companyDynamic_ul_parent .xl_ul_1 li .xl_companyDynamic_body_li_child .FR .xl_h2{
+	font-size: 20px;
+}
+.xl_companyDynamic_body .xl_companyDynamic_ul_parent .xl_ul_1 li .xl_companyDynamic_body_li_child .FR .xl_time{
+	color: #b4b4b4;
+	line-height: 25px;
+}
+.xl_companyDynamic_body .xl_companyDynamic_ul_parent .xl_ul_1 li .xl_companyDynamic_body_li_child .FR .xl_p_1{
+	color: #777777;
+	line-height: 28px;
+	margin-top: 20px;
+	height: 103px;
+	overflow: hidden;
+}
+.xl_companyDynamic_body .xl_companyDynamic_ul_parent .xl_ul_1 li .xl_companyDynamic_body_li_child .FR .xl_btn{
+	display: inline-block;
+	width: 100px;
+	height: 30px;
+	background-color: #58b9eb;
+	color: #ffffff;
+	text-align: center;
+	line-height: 30px;
+}
+/*页码*/
+.xl_yema{
+	width: 100%;
+	margin-top: 35px;
+	margin-bottom: 93px;
+	-moz-user-select: none; /*火狐*/
+	-webkit-user-select: none; /*webkit浏览器*/
+	-ms-user-select: none; /*IE10*/
+	-khtml-user-select: none; /*早期浏览器*/
+	user-select: none;
+}
+.xl_yema_body{
+	width: 1200px;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 16px;
+	color: #1e1f2d;
+}
+.xl_yema_body li{
+	float: left;
+	width: 25px;
+	height: 25px;
+	margin: 0 4px;
+	cursor: pointer;
+}
+.xl_yema_body .active{
+	background-color: #58b9eb;
+	color: #fff;
+}
+.xl_yema_body li:hover{
+	background-color: #58b9eb;
+	color: #fff;
+}
+.xl_yema_body ul{
+	display: inline-block;
+	vertical-align: bottom;
+	margin: 0 13px;
+}
+.xl_yema_body span{
+	display: inline-block;
+	vertical-align: bottom;
+	margin: 0 10px;
+	cursor: pointer;
+}
+.xl_yema_body span:hover{
+	color: #58b9eb;
+}
+
+/*返回顶部按钮*/
+.xl_returnTop{
+	width: 60px;
+	height: 70px;
+	color: #1e1f2d;
+	font-size: 14px;
+	position: fixed;
+	bottom: 180px;
+	/*right: 180px;*/
+	text-align: center;
+	cursor: pointer;
+	display: none;
+	/*filter:alpha(opacity=0);
+	-moz-opacity:0;
+	-khtml-opacity: 0;
+	opacity: 0;*/
+	-moz-user-select: none; /*火狐*/
+	-webkit-user-select: none; /*webkit浏览器*/
+	-ms-user-select: none; /*IE10*/
+	-khtml-user-select: none; /*早期浏览器*/
+	user-select: none;
+}
+.xl_returnTop span{
+	display: inline-block;
+	width: 42px;
+	height: 42px;
+	margin-bottom: 8px;
+}
+.xl_returnTop span img{
+	width: 42px;
+	height: 42px;
+}
+
+
+/*具体新闻页面*/
+.xl_companyDynamic_wenzhang{
+	width: 100%;
+	display: none;
+}
+.xl_companyDynamic_wenzhang_body{
+	width: 880px;
+	margin: 0 auto;
+	margin-top: 15px;
+	margin-bottom: 75px;
+}
+.xl_companyDynamic_wenzhang_body ul{
+	border-bottom: 1px solid #f0f0f0;
+	padding-bottom: 15px;
+	margin-bottom: 23px;
+}
+.xl_companyDynamic_wenzhang_body ul li{
+	display: none;
+}
+.xl_companyDynamic_wenzhang_body .xl_h2{
+	text-align: center;
+	font-size: 20px;
+	padding-top: 20px;
+}
+.xl_companyDynamic_wenzhang_body .xl_time{
+	text-align: center;
+	color: #b4b4b4;
+	border-bottom: 1px solid #f0f0f0;
+	padding: 10px 0 25px 0;
+}
+.xl_companyDynamic_wenzhang_body .xl_span_img{
+	width: 317px;
+	height: 212px;
+	margin: 30px auto;
+}
+.xl_companyDynamic_wenzhang_body .xl_span_img img{
+	width: 317px;
+	height: 212px;
+	text-align: center;
+}
+.xl_companyDynamic_wenzhang_body .xl_p_1{
+	color: #666;
+	line-height: 24px;
+	margin-bottom: 18px;
+	text-indent: 28px;
+}
+/*上下篇*/
+.xl_companyDynamic_wenzhang_body .xl_btn{
+	color: #333333;
+	line-height: 30px;
+	cursor: pointer;
+	-moz-user-select: none; /*火狐*/
+	-webkit-user-select: none; /*webkit浏览器*/
+	-ms-user-select: none; /*IE10*/
+	-khtml-user-select: none; /*早期浏览器*/
+	user-select: none;
+}
+
+
+/*联系我们页面代码*/
+.xl_contectus_banner{
+	width: 100%;
+	height: 410px;
+	background: url(../img/contactUs_banner.png) center center no-repeat;
+	background-size: cover;
+}
+.xl_contectus_body{
+	width: 100%;
+	color: #1e1f2d;
+	padding-bottom: 82px;
+}
+.xl_contectus_body_child{
+	width: 1200px;
+	margin: 0 auto;
+	position: relative;
+}
+.xl_contectus_body_child .xl_span_img{
+	position: absolute;
+	left: -70px;
+	top: 0;
+}
+.xl_contectus_body_right{
+	width: 895px;
+}
+.xl_contectus_body_right .xl_h2{
+	font-size: 24px;
+	line-height: 56px;
+	margin-top: 40px;
+}
+.xl_contectus_body_right .xl_p_1{
+	font-size: 16px;
+	line-height: 30px;
+}
+.xl_input{
+	width: 100%;
+	margin: 22px 0;
+}
+.xl_input input{
+	border: 0;
+	border: 1px solid #bdbdbd;
+	width: 368px;
+	height: 43px;
+	margin: 5px 0;
+	text-indent: 7px;
+}
+.xl_input textarea{
+	width: 497px;
+	height: 129px;
+	border: 0;
+	border: 1px solid #bdbdbd;
+	margin-top: 5px;
+	resize: none;
+	padding: 12px 8px;
+}
+.xl_contectus_body_right .xl_btn{
+	width: 100%;
+	height: 42px;
+	background-color: #1e1f2d;
+	border: 0;
+	color: #fff;
+	font-size: 20px;
+	margin-bottom: 27px;
+}
+
+
+/*加入我们页面代码*/
+.xl_joinUs_banner{
+	width: 100%;
+	height: 410px;
+	background: url(../img/joinUs_banner.png) center center no-repeat;
+	background-size: cover;
+}
+.xl_joinus_body{
+	width: 100%;
+}
+.xl_joinus_body_child{
+	width: 1200px;
+	margin: 0 auto;
+	padding-bottom: 70px;
+}
+.xl_joinus_body_right{
+	width: 1000px;
+}
+.xl_joinus_body_right .xl_h2{
+	font-size: 16px;
+}
+.xl_joinus_body_right .xl_h2 span{
+	color: #0668c1;
+	font-size: 18px;
+	font-weight: bold;
+}
+.xl_joinus_body_right li{
+	height: 50px;
+	background-color: #eeeeee;
+	line-height: 50px;
+	font-size: 18px;
+	margin-top: 25px;
+	width: 947px;
+	padding: 0 25px 0 28px;
+	cursor: pointer;
+	position: relative;
+	-moz-user-select: none; /*火狐*/
+	-webkit-user-select: none; /*webkit浏览器*/
+	-ms-user-select: none; /*IE10*/
+	-khtml-user-select: none; /*早期浏览器*/
+	user-select: none;
+}
+.xl_joinus_body_right li .xl_span_img{
+	width: 21px;
+	height: 11px;
+	position: absolute;
+	top: 50%;
+	margin-top: -5px;
+	right: 25px;
+	background: url(../img/join_jt_ico.png) no-repeat;
+}
+.xl_joinus_body_right li.active .xl_span_img{
+	background: url(../img/join_jt_ico_hover.png) no-repeat;
+}
+.xl_joinus_body_right li.active{
+	color: #fff;
+	background-color: #58b9eb;
+}
+.xl_joinus_body_right .xl_div{
+	width: 944px;
+	margin: 0 auto;
+	border-top: 1px solid #dddddd;
+	margin-top: 15px;
+	padding-top: 10px;
+}
+.xl_joinus_body_right .xl_div div{
+	color: #333333;
+	font-weight: bold;
+	line-height: 25px;
+}
+.xl_joinus_body_right .xl_div p{
+	line-height: 25px;
+	color: #666666;
+}
+.xl_joinus_body_right .xl_joinus_body_li_body{
+	padding-bottom: 5px;
+	display: none;
+}
+.xl_joinus_h2,.xl_companyDynamic_h2_xingqing{
+	font-size: 14px;
+}
+.xl_joinus_h2 a,.xl_companyDynamic_h2_xingqing a{
+	font-size: 14px;
+}
+.xl_joinus_h2 a,.xl_companyDynamic_h2_xingqing span{
+	font-size: 14px;
+}
+
+
+
+/*公司简介*/
+.xl_aboutus_banner{
+	width: 100%;
+	height: 410px;
+	background: url(../img/aboutus_banner.jpg) center center no-repeat;
+	background-size: cover;
+}
+.xl_aboutus_title{
+	width: 1020px;
+	margin: 0 auto;
+	position: relative;
+	top: -50px;
+	margin-bottom: -50px;
+}
+.xl_aboutus_title .active{
+	color: #fff;
+	background: url(../img/aboutus_title_img_hover.png) no-repeat;
+}
+.xl_aboutus_title li{
+	width: 240px;
+	height: 130px;
+	background: url(../img/aboutus_title_img.png) no-repeat;
+	position: relative;
+	float: left;
+	margin: 0px 6px;
+	color: #73c121;
+}
+.xl_aboutus_title li .xl_span_1{
+	position: absolute;
+	top: -8px;
+	left: 15px;
+	font-size: 80px;
+	font-weight: lighter;
+}
+.xl_aboutus_title li .xl_span_2{
+	font-size: 20px;
+	text-align: center;
+	line-height: 20px;
+}
+.xl_aboutus_title li .xl_span_2 .xl_span_2_1{
+	position: absolute;
+	right: -25px;
+	bottom: 41px;
+	width: 200px;
+}
+.xl_aboutus_title li .xl_span_2 .xl_span_2_2{
+	position: absolute;
+	right: 0px;
+	bottom: -25px;
+	text-align: center;
+	width: 200px;
+	font-size: 10px;
+	text-transform:uppercase;
+	word-spacing:2px;
+	letter-spacing: -1px; 
+}
+/*公司简介主体部分*/
+.xl_aboutus_body_parent{
+	width: 100%;
+	background: url(../img/aboutus_bg.png);
+	padding-bottom: 84px;
+}
+.xl_aboutus_body{
+	width: 1200px;
+	margin: 0 auto;
+	padding-top: 120px;
+}
+.xl_aboutus_body_1{
+	width: 880px;
+	padding: 50px 75px 50px 50px;
+	border: 2px solid #dfdfdf;
+	background-color: #fff;
+	margin-bottom: 40px;
+}
+.xl_aboutus_body_1 p{
+	line-height: 22px;
+}
+.xl_aboutus_body_1 .xl_div{
+	margin: 25px 0;
+}
+.xl_aboutus_body_1 .xl_div p{
+	line-height: 26px;
+}
+.xl_aboutus_body_1 .xl_div .xl_span_1{
+	color: #73c121;
+	font-weight: bold;
+	margin-right: 1px;
+}
+.xl_aboutus_body_1 .xl_div .xl_span_2{
+	font-weight: bold;
+}
+.xl_aboutus_body_2 li{
+	width: 300px;
+	padding:0 49px 0 48px;
+	float: left;
+	border: 2px solid #dfdfdf;
+	background-color: #fff;
+	border-left: 0;
+	height: 590px;
+	overflow: hidden;
+}
+.xl_aboutus_body_2 li h3{
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: 40px;
+	margin-top: 48px;
+}
+.xl_aboutus_body_2 li p{
+	margin: 15px 0;
+	line-height: 25px;
+}
+
+
+/*技术力量页面*/
+.xl_TechnicalAdviser{
+	width: 100%;
+	margin-top: 80px;
+}
+.xl_TechnicalAdviser .xl_h2{
+	text-align: center;
+	background-color: #f5f4f9;
+	width: 100%;
+	height: 120px;
+}
+.xl_TechnicalAdviser .xl_h2 .xl_span_1{
+	display: inline-block;
+	font-size: 20px;
+	margin-top: 29px;
+	margin-bottom: 13px;
+}
+.xl_TechnicalAdviser .xl_h2 .xl_span_2{
+	border-top: 2px solid #58b9eb;
+	padding-top: 6px;
+}
+.xl_TechnicalAdviser_body{
+	width: 1200px;
+	margin: 0 auto;
+	margin-top: 140px;
+}
+.xl_TechnicalAdviser_body li{
+	border: 2px solid #dfdfdf;
+	width: 296px;
+	height: 496px;
+	text-align: center;
+	position: relative;
+	float: left;
+	border-left: 0;
+}
+.xl_TechnicalAdviser_body li h4{
+	color: #58b9eb;
+	font-size: 20px;
+	font-weight: bold;
+	margin-top: 90px;
+	margin-bottom: 13px;
+}
+.xl_TechnicalAdviser_body li .xl_p_1{
+	font-weight: bold;
+	line-height: 23px;
+}
+.xl_TechnicalAdviser_body li .xl_p_2{
+	line-height: 22px;
+	font-size: 12px;
+	margin-top: 20px;
+}
+.xl_TechnicalAdviser_body li .xl_span_img{
+	position: absolute;
+	display: inline-block;
+	width: 150px;
+	height: 150px;
+	left: 50%;
+	margin-left: -75px;
+	top: -100px;
+	border-radius: 50%;
+	-moz-border-radius: 50%; /* Firefox */
+  	-webkit-border-radius: 50%; /* Safari 和 Chrome */
+}
+
+/*项目开发团队*/
+.xl_ProjectDevelopmentTeam{
+	margin-bottom: 84px;
+}
+.xl_ProjectDevelopmentTeam li{
+	height: 528px;
+}
+
+/*里程碑*/
+.xl_milestone{
+	width: 100%;
+	padding: 80px 0 0 0;
+	margin-bottom: 84px;
+}
+.xl_milestone_body{
+	width: 1200px;
+	margin: 0 auto;
+	position: relative;
+}
+.xl_milestone_body_child{
+	position: absolute;
+	left: 100px;
+	top: -170px;
+	width: 100%;
+}
+.xl_milestone_body_left{
+	width: 100px;
+	text-align: center;
+	/*height: 100%;*/
+}
+.xl_milestone_body_right{
+	margin-top: 100px;
+}
+.xl_milestone_body_right input{
+	width: 150px;
+	height: 50px;
+	background-color: #58b9eb;
+	color: #fff;
+	font-size: 20px;
+	border: 0;
+}
+.xl_milestone_body_child .xl_milestone_body_child_ul{
+	padding-bottom: 38px;
+	background: url(../img/shuzhou_ico.png) repeat-y;
+	margin-left: 49px;
+	margin-top: -8px;
+}
+.xl_milestone_body_child_ul li{
+	height: 85px;
+	position: relative;
+	margin-left: 50px;
+}
+.xl_milestone_body_child_ul li .xl_span_img{
+	display: inline-block;
+	position: absolute;
+	left: -100px;
+	width: 100px;
+	text-align: center;
+	/*background: url(../img/shuzhou_ico.png) 50% no-repeat;*/
+	height: 100%;
+	margin-left: 1px;
+}
+.xl_milestone_body_child_ul li .xl_span_img img{
+	margin-top: 20px;
+}
+.xl_milestone_body_child_ul li h6{
+	font-size: 20px;
+	font-weight: bold;
+	display: inline-block;
+	margin-top: 15px;
+}
+.xl_milestone_body_child_ul li p{
+	font-size: 14px;
+}
+
+.xl_IntellectualProperty{
+	margin-top: 80px;
+	padding-bottom: 84px;
+	position: relative;
+}
+.xl_IntellectualProperty li{
+	background-color: #f5f4f9;
+	text-align: center;
+}
+.xl_IntellectualProperty li{
+	height: 280px;
+}
+.xl_IntellectualProperty li .xl_span_1{
+	line-height: 21px;
+	padding-top: 18px;
+	font-size: 14px;
+	font-weight: bold;
+	height: 80px;
+}
+.xl_IntellectualProperty li .xl_span_1 p{
+	font-size: 12px;
+	font-weight: 100;
+}
+.xl_IntellectualProperty_bg{
+	width: 100%;
+	height: 120px;
+	background-color: #f5f4f9;
+	position: absolute;
+	top: 0;
+	z-index: -1;
+}
