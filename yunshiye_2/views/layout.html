@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>{{title}}</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/reset_pc.css" />
+    <link rel="stylesheet" type="text/css" href="css/function.css" />
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/page.css" />
+    <link rel="stylesheet" type="text/css" href="css/lightbox.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/base.min.css" />
+    {{#links}}
+    <link rel="stylesheet" type="text/css" href="{{.}}" />
+    {{/links}}
+    <!--[if (gte IE 6)&(lte IE 8)]>
+    <script src="js/selectivizr.js" type="text/javascript" charset="utf-8"></script>
+    <![endif]-->
+    <!--[if lte IE 9]>
+    <script src="js/respond.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/html5.min.js" type="text/javascript" charset="utfs" type="text/javascript" charset="utf-8"></script>
+    <![endif]-->
+    <!--[if lte IE 7]>
+    <div id="errorie"><div>您还在使用老掉牙的IE，正常使用系统前请升级您的浏览器到 IE8以上版本 <a target="_blank" href="http://windows.microsoft.com/zh-cn/internet-explorer/ie-8-worldwide-languages">点击升级</a>&nbsp;&nbsp;强烈建议您更改换浏览器：<a href="http://down.tech.sina.com.cn/content/40975.html" target="_blank">谷歌 Chrome</a></div></div>
+    <script type="text/javascript">
+        alert('您还在使用老掉牙的IE，正常使用系统前请升级您的浏览器到 IE8以上版本')
+    </script>
+    <![endif]-->
+</head>
+
+<body>
+
+    <!--头部-->
+    {{> header}}
+
+
+    <!--内容-->
+    {{> content}}
+
+
+    <!--底部-->
+    {{> navBottom}}
+
+    <script src="js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+    {{#scripts}}
+    <script src="{{.}}"></script>
+    {{/scripts}}
+    <script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+</body>
+
+</html>

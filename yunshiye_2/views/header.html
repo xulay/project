@@ -1,0 +1,56 @@
+<nav class="navbar navbar-default g-hd">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="/">
+                <span class="m-logo">
+                    <img src="img/logo.png" width="100%"/>
+                </span>
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right m-nav">
+                <li>
+                    <a href="/">首页</a>
+                </li>
+                <li>
+                    <a href="about">关于我们</a>
+                </li>
+                <li>
+                    <a href="Products-News">产品动态</a>
+                </li>
+                <li>
+                    <a href="solution">解决方案</a>
+                </li>
+                <li>
+                    <a href="caseapp">案例中心</a>
+                </li>
+                <li>
+                    <a href="new">新闻资讯</a>
+                </li>
+                <li>
+                    <a href="talent-center">人才中心</a>
+                </li>
+                <li>
+                    <a href="contact-us">联系我们</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+
+<!--给导航加active-->
+<div id="index" style="display: none;">{{navIndex}}</div>
+<script type="text/javascript">
+    var nav=parseInt(document.getElementById('index').innerHTML);
+</script>
